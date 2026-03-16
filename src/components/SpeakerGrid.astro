@@ -1,0 +1,40 @@
+---
+const { title, people = [] } = Astro.props;
+---
+
+<section style="margin-top: 18px;">
+  <h2 style="margin: 0 0 12px; text-align:center;">{title}</h2>
+
+  <div class="grid">
+    {people.map((p) => (
+      <article class="card">
+        <img class="avatar" src={p.photo} alt={p.name} loading="lazy" />
+        <div class="name">{p.name}</div>
+        <div class="role">{p.affiliation}</div>
+        <div class="meta">{p.status}</div>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+  @media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.grid{grid-template-columns:1fr}}
+
+  .card{
+    background: var(--panel2);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 14px;
+    text-align: center;
+  }
+  .avatar{
+    width: 120px;height:120px;border-radius:999px;object-fit:cover;
+    border: 1px solid var(--line);
+    margin: 8px auto 12px;display:block;
+  }
+  .name{font-weight:750;font-size:18px;margin:0 0 6px;color:var(--text)}
+  .role{color:var(--muted);font-size:13px;margin:0 0 8px}
+  .meta{color:var(--muted);font-size:12px;font-style:italic}
+</style>

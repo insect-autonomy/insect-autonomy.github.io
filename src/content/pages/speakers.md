@@ -1,0 +1,47 @@
+---
+title: "Speakers"
+description: "Invited speakers and status"
+updated: "2026-03-15"
+
+confirmed:
+  - name: "Yiannis Aloimonos"
+    affiliation: "University of Maryland, College Park"
+    status: ""
+    photo: "speakers/aloimonos.jpg"
+    website: "http://prg.cs.umd.edu/"
+    scholar: ""
+    linkedin: ""
+  - name: "Vijay Janapa Reddi"
+    affiliation: "Harvard"
+    status: ""
+    photo: "speakers/reddi.jpg"
+    website: ""
+    scholar: ""
+    linkedin: ""
+  - name: "Frances Chance"
+    affiliation: "Sandia National Laboratories"
+    status: ""
+    photo: "speakers/chance.jpg"
+    website: ""
+    scholar: ""
+    linkedin: ""
+  - name: "Prophesee AI"
+    affiliation: "Prophesee AI"
+    status: ""
+    photo: "speakers/prophesee.jpg"
+    website: ""
+    scholar: ""
+    linkedin: ""
+
+# pending:
+#   - name: "Michele Magno"
+#     affiliation: "(add affiliation)"
+#     status: "Pending"
+#     photo: "/speakers/placeholder.jpg"
+#   - name: "Daniela Rus"
+#     affiliation: "(add affiliation)"
+#     status: "Pending"
+#     photo: "/speakers/placeholder.jpg"
+---
+
+Listed below are the confirmed invited speakers for Insect Autonomy Workshop at IROS 2026. 

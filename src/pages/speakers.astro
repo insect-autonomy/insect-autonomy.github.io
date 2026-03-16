@@ -1,0 +1,27 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import { getEntryBySlug } from "astro:content";
+import SpeakerGrid from "../components/SpeakerGrid.astro";
+
+const entry = await getEntryBySlug("pages", "speakers");
+if (!entry) throw new Error("Missing content: src/content/pages/speakers.md");
+
+const { Content } = await entry.render();
+const data = entry.data;
+---
+
+<PageLayout title={data.title} description={data.description}>
+  <section class="section">
+    <div class="prose">
+      <Content />
+    </div>
+
+    {data.confirmed && data.confirmed.length > 0 && (
+      <SpeakerGrid title="Confirmed" people={data.confirmed} />
+    )}
+
+    {data.pending && data.pending.length > 0 && (
+      <SpeakerGrid title="Invited / Pending" people={data.pending} />
+    )}
+  </section>
+</PageLayout>

@@ -1,0 +1,49 @@
+---
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/cfp", label: "Call for Papers" },
+  { href: "/program", label: "Program" },
+  { href: "/speakers", label: "Speakers" },
+  { href: "/organizers", label: "Organizers" }
+];
+---
+<header class="header">
+  <div class="container navbar">
+    <div class="brand">
+      <a href={Astro.site?.pathname ? `${Astro.site.pathname}/` : "/"}>Insect-scale Autonomy</a>
+      <small>IROS 2026 Workshop · Pittsburgh · Sep 27–Oct 1, 2026</small>
+    </div>
+    <nav class="nav" aria-label="Primary navigation">
+      {nav.map((x) => <a href={x.href}>{x.label}</a>)}
+    </nav>
+
+
+<button id="themeToggle" class="themeBtn" type="button" aria-label="Toggle theme">
+  <span id="themeIcon" aria-hidden="true">☀</span>
+</button>
+
+<script>
+  const root = document.documentElement;
+  const icon = document.getElementById("themeIcon");
+  const btn = document.getElementById("themeToggle");
+
+  const apply = (theme) => {
+    root.dataset.theme = theme;
+    localStorage.setItem("theme", theme);
+    // Show the icon for the *other* theme (the action)
+    icon.textContent = theme === "light" ? "☾" : "☀";
+  };
+
+  // Init: saved theme or system preference
+  const saved = localStorage.getItem("theme");
+  const systemLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  apply(saved ?? (systemLight ? "light" : "dark"));
+
+  btn?.addEventListener("click", () => {
+    apply(root.dataset.theme === "light" ? "dark" : "light");
+  });
+</script>
+
+
+  </div>
+</header>

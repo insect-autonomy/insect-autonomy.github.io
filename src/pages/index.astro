@@ -1,0 +1,38 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import { getEntryBySlug } from "astro:content";
+
+const entry = await getEntryBySlug("pages", "home");
+if (!entry) throw new Error("Missing content: src/content/pages/home.md");
+
+const { Content } = await entry.render();
+const data = entry.data;
+---
+
+<PageLayout title={data.title} description={data.description}>
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <h1>Insect-scale Autonomy Workshop</h1>
+        <p>What principles, algorithms, and system designs enable reliable autonomy when resources are tightly constrained?</p>
+        <div class="badges">
+          <span class="badge">Full-day</span>
+          <span class="badge">Invited talks + posters/demos + panel</span>
+          <span class="badge">Best Poster/Demo Award</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Quick info</h3>
+        <p><strong>Venue:</strong> IROS 2026 (Pittsburgh)</p>
+        <p><strong>Dates:</strong> Sep 27–Oct 1, 2026</p>
+        <p><strong>Focus:</strong> Autonomy under Perception, Design, Control and AI constraints.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="prose">
+      <Content />
+    </div>
+  </section>
+</PageLayout>
