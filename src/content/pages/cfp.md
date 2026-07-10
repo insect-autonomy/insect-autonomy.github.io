@@ -85,7 +85,7 @@ For questions about submissions, please contact: Chahat Singh (chahat.singh@colo
 # Important Dates
 - Paper / poster submission deadline: August 24, 2026, 11:59 PM AoE
 - Acceptance notification: September 7, 2026
-- Final version deadline: September 14, 2026
+- Camera ready deadline: September 14, 2026
 - Workshop date: October 1, 2026
   
 Authors who require an early decision for visa or travel planning should contact the organizers.
