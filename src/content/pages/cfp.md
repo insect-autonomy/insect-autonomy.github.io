@@ -70,7 +70,9 @@ Submissions do **NOT** need to be limited to literal insect-sized robots. We als
 
 # Submission Instructions
 Submissions should be uploaded as PDF files through the workshop submission site:
-**Submission link**: Coming Soon
+
+**Submission link**: [OpenReview](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
+
 Paper Track submissions should use the IEEE conference paper format:
 - LaTeX template: [ieeeconf.zip](https://ras.papercept.net/conferences/support/files/ieeeconf.zip) (select US Letter paper in root.tex)
 - MS-Word template: [ieeeconf_letter.dot](https://ras.papercept.net/conferences/support/files/ieeeconf_letter.dot)
