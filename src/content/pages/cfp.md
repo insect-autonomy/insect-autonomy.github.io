@@ -78,4 +78,42 @@ Paper Track submissions should use the IEEE conference paper format:
 Deadlines are in **Anywhere on Earth (AoE)** time.
 
 For questions about submissions, please contact: Chahat Singh (chahat.singh@colorado.edu)
+---
 
+# Important Dates
+- Paper / poster submission deadline: August 24, 2026, 11:59 PM AoE
+- Acceptance notification: September 7, 2026
+- Final version deadline: September 14, 2026
+- Workshop date: October 1, 2026
+  
+Authors who require an early decision for visa or travel planning should contact the organizers.
+
+---
+
+# Review Criteria
+Submissions will be reviewed based on:
+- relevance to insect-scale or resource-constrained autonomy,
+- technical quality,
+- clarity of presentation,
+- originality or insight,
+- potential to stimulate discussion at the workshop,
+- and relevance across robotics, perception, control, design, embedded AI, or biological inspiration.
+
+# Awards
+Submitted papers and posters will be considered for workshop awards. Awards may include:
+- Best Paper Award
+- Best Poster / Demo Award
+
+Award decisions will be based on technical merit, originality, relevance to the workshop theme, quality of presentation, and potential impact on the field.
+
+# Organizers
+- Chahat Singh, University of Colorado Boulder
+- Kaushik Jayaram, Imperial College London
+- Sean J. Humbert, University of Colorado Boulder
+- Guido de Croon, Delft University of Technology
+- Cornelia Fermüller, University of Maryland, College Park
+- Heiko Kabutz, University of Colorado Boulder
+
+
+
+---
