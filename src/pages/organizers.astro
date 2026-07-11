@@ -1,18 +1,32 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import OrganizerGrid from "../components/OrganizerGrid.astro";
 import { getEntryBySlug } from "astro:content";
 
 const entry = await getEntryBySlug("pages", "organizers");
-if (!entry) throw new Error("Missing content: src/content/pages/organizers.md");
+
+if (!entry) {
+  throw new Error("Missing content: src/content/pages/organizers.md");
+}
+
 const { Content } = await entry.render();
 const data = entry.data;
 ---
 
 <PageLayout title={data.title} description={data.description}>
-
   <section class="section">
-    <div class="prose">
+    <div class="prose organizers-intro">
       <Content />
     </div>
+
+    {data.organizers && data.organizers.length > 0 && (
+      <OrganizerGrid people={data.organizers} />
+    )}
   </section>
 </PageLayout>
+
+<style>
+  .organizers-intro :global(h1) {
+    margin-top: 0;
+  }
+</style>
