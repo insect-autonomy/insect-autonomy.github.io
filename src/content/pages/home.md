@@ -4,6 +4,8 @@ description: "IROS 2026 Workshop - Insect-scale Autonomy"
 updated: "2026-03-15"
 ---
 
+![Insect-scale autonomy workshop banner](/insect-autonomy-banner.jpg)
+
 ## Overview
 Advances in robotics have made it possible to build increasingly small and agile systems, but true autonomy at insect-scale remains constrained by sensing, computation, power, actuation, and packaging. This workshop focuses on identifying principles, algorithms, and system designs that enable reliable autonomy under tight resource limits.
 
