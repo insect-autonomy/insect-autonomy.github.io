@@ -167,3 +167,17 @@ tr:last-child td{border-bottom:0}
 .themeBtn:active{
   transform: translateY(1px);
 }
+
+.prose img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  margin: 0 0 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .prose img {
+    border-radius: 12px;
+  }
+}
