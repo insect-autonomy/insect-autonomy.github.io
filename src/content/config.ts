@@ -11,6 +11,14 @@ const person = z.object({
   twitter: z.string().optional(),
 });
 
+const organizer = z.object({
+  name: z.string(),
+  affiliation: z.string(),
+  photo: z.string(),
+  website: z.string().optional(),
+  lab: z.string().optional(),
+});
+
 const pages = defineCollection({
   type: "content",
   schema: z.object({
@@ -21,6 +29,9 @@ const pages = defineCollection({
     // speakers page extras (optional for other pages)
     confirmed: z.array(person).optional(),
     pending: z.array(person).optional(),
+
+    // organizers page extras
+    organizers: z.array(organizer).optional(),
   }),
 });
 
