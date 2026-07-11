@@ -4,8 +4,13 @@ description: "Submission information and important dates"
 updated: "2026-07-10"
 ---
 
+## Call for Papers / Posters
+## IROS 2026 Workshop on Insect-Scale Autonomy
+
 ### Date: October 1, 2026
 ### Website: https://insect-autonomy.github.io/
+### Deadline: Aug 24, 2026
+### Submit [here](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
 ---
 
 We invite submissions to the IROS workshop “Insect-Scale Autonomy.”
@@ -42,6 +47,8 @@ Poster-only submissions may be based on:
 - or position statements.
   
 Poster-only submissions should include a 1–2 page abstract describing the work and its relevance to the workshop. There is no required poster template. Authors of accepted posters are expected to bring their own printed posters to the workshop.
+
+**Note**: At least one author of each accepted submission is expected to attend the workshop in person.
 
 ---
 
@@ -87,7 +94,7 @@ For questions about submissions, please contact: Chahat Singh (chahat.singh@colo
 # Important Dates
 - Paper / poster submission deadline: August 24, 2026, 11:59 PM AoE
 - Acceptance notification: September 7, 2026
-- Camera ready deadline: September 14, 2026
+- Final version deadline: September 14, 2026
 - Workshop date: October 1, 2026
   
 Authors who require an early decision for visa or travel planning should contact the organizers.
