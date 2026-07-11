@@ -46,7 +46,8 @@ Poster-only submissions should include a 1–2 page abstract describing the work
 ---
 
 # Topics of Interest
-- Topics of interest include, but are not limited to:
+
+Topics of interest include, but are not limited to:
 - Insect-scale and miniature autonomous robots
 - Bio-inspired sensing, control, and navigation
 - Biological principles from insects and small animals for autonomous systems
