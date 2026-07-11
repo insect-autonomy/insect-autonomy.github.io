@@ -1,40 +1,65 @@
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-  <title>{title} · Insect-scale Autonomy</title>
+const { title, description } = Astro.props;
+---
 
-  {description && <meta name="description" content={description} />}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Open Graph / Link Preview -->
-  <meta property="og:title" content="Insect-scale Autonomy Workshop" />
-  <meta
-    property="og:description"
-    content="IROS 2026 Workshop on bio-inspired, resource-constrained autonomy across perception, design, control, and edge AI."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://insect-autonomy.github.io/" />
-  <meta
-    property="og:image"
-    content="https://insect-autonomy.github.io/insect-autonomy-banner.jpg"
-  />
+    <title>{title} · Insect-scale Autonomy</title>
 
-  <!-- Optional but recommended -->
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="450" />
-  <meta property="og:image:alt" content="Insect-scale Autonomy Workshop banner" />
+    {description && <meta name="description" content={description} />}
 
-  <!-- Twitter / social cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Insect-scale Autonomy Workshop" />
-  <meta
-    name="twitter:description"
-    content="IROS 2026 Workshop on bio-inspired, resource-constrained autonomy."
-  />
-  <meta
-    name="twitter:image"
-    content="https://insect-autonomy.github.io/insect-autonomy-banner.jpg"
-  />
+    <meta property="og:title" content="Insect-scale Autonomy Workshop" />
+    <meta
+      property="og:description"
+      content="IROS 2026 Workshop on bio-inspired, resource-constrained autonomy across perception, design, control, and edge AI."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://insect-autonomy.github.io/" />
 
-  <link rel="icon" href={new URL("favicon.svg", Astro.site)} />
-</head>
+    <meta
+      property="og:image"
+      content="https://insect-autonomy.github.io/insect-autonomy-banner.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://insect-autonomy.github.io/insect-autonomy-banner.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Insect-scale Autonomy Workshop" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Insect-scale Autonomy Workshop" />
+    <meta
+      name="twitter:description"
+      content="IROS 2026 Workshop on bio-inspired, resource-constrained autonomy."
+    />
+    <meta
+      name="twitter:image"
+      content="https://insect-autonomy.github.io/insect-autonomy-banner.jpg"
+    />
+
+    <link rel="icon" href={new URL("favicon.svg", Astro.site)} />
+  </head>
+
+  <script>
+    const saved = localStorage.getItem("theme");
+    if (saved) document.documentElement.dataset.theme = saved;
+  </script>
+
+  <body>
+    <Header />
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
