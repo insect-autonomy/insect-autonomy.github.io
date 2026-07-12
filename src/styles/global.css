@@ -10,8 +10,8 @@
   --max: 1080px;
   --r: 18px;
 
-  --bg-grad-1: rgba(11,95,255,.06);
-  --bg-grad-2: rgba(16,185,129,.06);
+  --bg-grad-1: rgba(245, 158, 11, .11);
+  --bg-grad-2: rgba(217, 119, 6, .07);
 }
 
 :root[data-theme="dark"]{
