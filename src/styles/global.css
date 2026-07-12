@@ -113,6 +113,8 @@ a:hover{
   color: var(--text);
   font-weight: 780;
   letter-spacing: .2px;
+  font-size: 22px;
+  line-height: 1.2;
 }
 
 .brand small{
