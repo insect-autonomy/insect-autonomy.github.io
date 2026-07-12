@@ -48,6 +48,8 @@ Poster-only submissions may be based on:
   
 Poster-only submissions should include a 1–2 page abstract describing the work and its relevance to the workshop. There is no required poster template. Authors of accepted posters are expected to bring their own printed posters to the workshop.
 
+Paper Track submissions should contain original or work-in-progress material. Because the workshop is non-archival, concurrent submission is permitted, subject to the policies of the other venue.
+
 **Note**: At least one author of each accepted submission is expected to attend the workshop in person.
 
 ---
@@ -109,6 +111,8 @@ Submissions will be reviewed based on:
 - originality or insight,
 - potential to stimulate discussion at the workshop,
 - and relevance across robotics, perception, control, design, embedded AI, or biological inspiration.
+
+Submissions will be reviewed non-anonymously by the workshop organizers and invited reviewers.
 
 # Awards
 Submitted papers and posters will be considered for workshop awards. Awards may include:
