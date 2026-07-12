@@ -68,7 +68,7 @@ const { people = [] } = Astro.props;
 
   .organizer-photo-link {
     display: block;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
     background: var(--panel);
   }
@@ -88,6 +88,9 @@ const { people = [] } = Astro.props;
 
   .organizer-content {
     padding: 16px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 128px;
   }
 
   .organizer-content h2 {
@@ -110,6 +113,7 @@ const { people = [] } = Astro.props;
     align-items: center;
     font-size: 13px;
     font-weight: 650;
+    margin-top: auto;
   }
 
   @media (max-width: 900px) {
