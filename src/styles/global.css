@@ -559,25 +559,60 @@ tr:last-child td{
 .prose,
 .speaker-card,
 .organizer-card{
-  position: relative;
-  overflow: hidden;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
 }
 
-.card::before,
-.prose::before,
-.speaker-card::before,
-.organizer-card::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 18px;
-  right: 18px;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    color-mix(in srgb, var(--link) 70%, gold 30%),
-    transparent
-  );
+.card:hover,
+.speaker-card:hover,
+.organizer-card:hover{
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--link) 28%, var(--line));
+  box-shadow: 0 12px 28px rgba(0,0,0,.10);
+}
+
+.prose:hover{
+  border-color: color-mix(in srgb, var(--link) 18%, var(--line));
+}
+
+.prose img{
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.prose img:hover{
+  transform: scale(1.004);
+  box-shadow: 0 14px 34px rgba(0,0,0,.14);
+}
+
+.openreview-button span{
+  transition: transform 160ms ease;
+}
+
+.openreview-button:hover span{
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .card,
+  .prose,
+  .speaker-card,
+  .organizer-card,
+  .prose img,
+  .openreview-button,
+  .openreview-button span{
+    transition: none;
+  }
+
+  .card:hover,
+  .speaker-card:hover,
+  .organizer-card:hover,
+  .prose img:hover,
+  .openreview-button:hover{
+    transform: none;
+  }
 }
