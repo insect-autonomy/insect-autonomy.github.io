@@ -517,3 +517,40 @@ tr:last-child td{
     padding: 20px;
   }
 }
+
+
+.openreview-button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 14px;
+  padding: 9px 16px;
+
+  border: 1px solid color-mix(in srgb, var(--link) 70%, transparent);
+  border-radius: 999px;
+
+  background: var(--link);
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.2;
+  text-decoration: none;
+
+  transition:
+    transform 150ms ease,
+    filter 150ms ease;
+}
+
+.openreview-button:hover{
+  color: #ffffff;
+  text-decoration: none;
+  filter: brightness(.92);
+  transform: translateY(-1px);
+}
+
+.openreview-button:active{
+  transform: translateY(0);
+}
