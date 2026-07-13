@@ -554,3 +554,30 @@ tr:last-child td{
 .openreview-button:active{
   transform: translateY(0);
 }
+
+.card,
+.prose,
+.speaker-card,
+.organizer-card{
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before,
+.prose::before,
+.speaker-card::before,
+.organizer-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  right: 18px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--link) 70%, gold 30%),
+    transparent
+  );
+}
