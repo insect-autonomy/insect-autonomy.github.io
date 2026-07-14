@@ -44,4 +44,7 @@ confirmed:
 #     photo: "/speakers/placeholder.jpg"
 ---
 
-Listed below are the confirmed invited speakers for Insect Autonomy Workshop at IROS 2026. 
+Listed below are the confirmed invited speakers for Insect Autonomy Workshop at IROS 2026. More speakers will be updated soon.
+
+
+
