@@ -628,3 +628,115 @@ tr:last-child td{
     transform: none;
   }
 }
+
+.prose a[href*="openreview.net"],
+.prose a[href="https://insect-autonomy.github.io/"]{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 7px 12px;
+  border: 1px solid color-mix(in srgb, var(--link) 45%, var(--line));
+  border-radius: 999px;
+
+  background: color-mix(in srgb, var(--link) 10%, transparent);
+  color: var(--link);
+  font-weight: 650;
+  text-decoration: none;
+
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.prose a[href*="openreview.net"]:hover,
+.prose a[href="https://insect-autonomy.github.io/"]:hover{
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--link) 16%, transparent);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--link) 15%, transparent);
+}
+
+.prose > h1,
+.prose > h2,
+.prose > h3,
+.prose > p,
+.prose > ul,
+.prose > hr{
+  animation: cfp-fade-up 420ms ease both;
+}
+
+@keyframes cfp-fade-up{
+  from{
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.prose h1,
+.prose h2{
+  scroll-margin-top: 110px;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.prose h1:hover,
+.prose h2:hover{
+  color: var(--link);
+  transform: translateX(2px);
+}
+
+.prose a[href$=".zip"],
+.prose a[href$=".dot"]{
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    transform 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease;
+}
+
+.prose a[href$=".zip"]:hover,
+.prose a[href$=".dot"]:hover{
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--link) 35%, var(--line));
+  background: color-mix(in srgb, var(--link) 8%, var(--panel));
+}
+
+@media (prefers-reduced-motion: reduce){
+  .prose > h1,
+  .prose > h2,
+  .prose > h3,
+  .prose > p,
+  .prose > ul,
+  .prose > hr{
+    animation: none;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose a{
+    transition: none;
+  }
+
+  .prose h1:hover,
+  .prose h2:hover,
+  .prose a:hover{
+    transform: none;
+  }
+}
