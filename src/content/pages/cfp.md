@@ -17,7 +17,7 @@ We invite submissions to the IROS workshop “Insect-Scale Autonomy.”
 Recent progress in robotics, perception, learning, control, and embedded AI has enabled increasingly small and agile robotic systems. However, achieving reliable autonomy at insect scale remains fundamentally constrained by limited sensing, computation, power, actuation, and packaging. Insects and other small animals demonstrate robust autonomous behaviors such as stabilization, navigation, exploration, escape, and recovery in cluttered and uncertain environments. Translating these principles into engineered systems requires new methods that tightly couple algorithms, mechanics, sensing, control, and hardware.
 
 This workshop will bring together researchers working on insect-scale robotics, bio-inspired autonomy, resource-aware perception and learning, control under severe constraints, embodied intelligence, and low-power/edge AI. The goal is to identify the key technical bottlenecks, evaluation practices, and near-term milestones needed to advance reliable autonomy in resource-limited robotic systems. The accepted proposal frames the workshop around three technical sessions: resource-aware perception and learning, mechanics/actuation/design with control, and on-board compute, edge AI hardware, and deployment.
-The workshop will include invited talks, contributed presentations, posters/demos, moderated discussions, and a panel on benchmarks, evaluation practices, and autonomy targets for insect-scale systems. 
+The workshop will include invited talks, contributed presentations, posters, moderated discussions, and a panel on benchmarks, evaluation practices, and autonomy targets for insect-scale systems. 
 
 ---
 
@@ -43,7 +43,6 @@ Poster-only submissions may be based on:
 - preliminary results,
 - hardware systems,
 - datasets or benchmarks,
-- demos,
 - or position statements.
   
 Poster-only submissions should include a 1–2 page abstract describing the work and its relevance to the workshop. There is no required poster template. Authors of accepted posters are expected to bring their own printed posters to the workshop.
@@ -117,7 +116,7 @@ Submissions will be reviewed non-anonymously by the workshop organizers and invi
 # Awards
 Submitted papers and posters will be considered for workshop awards. Awards may include:
 - Best Paper Award
-- Best Poster / Demo Award
+- Best Poster Award
 
 Award decisions will be based on technical merit, originality, relevance to the workshop theme, quality of presentation, and potential impact on the field.
 
