@@ -21,7 +21,11 @@ Advances in robotics have made it possible to build increasingly small and agile
   **C. On-board compute, edge AI hardware, and deployment**
 
 ## Format
-Invited keynotes, contributed spotlights, posters/demos, and a panel on evaluation practices, benchmarks, and autonomy targets. A **Best Poster/Demo Award** will be presented for an outstanding contributed poster or live demonstration.
+
+The workshop will feature invited keynotes, contributed spotlight presentations, posters, and a panel on evaluation practices, benchmarks, and autonomy targets.
+
+All accepted Paper Track submissions will be presented as posters. A subset of accepted papers will also be selected for short spotlight presentations during the workshop.
+A **Best Paper Award** will be presented. A **Best Poster Award** may also be presented, subject to the number and quality of eligible contributions.
 
 ## Contact
 Correspondence: **Chahat Singh** and **Kaushik Jayaram**.
