@@ -10,7 +10,7 @@ updated: "2026-07-10"
 ### Date: October 1, 2026
 ### Website: https://insect-autonomy.github.io/
 ### Deadline: Aug 24, 2026
-### Submit [here](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
+### [Submit on OpenReview](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
 ---
 
 We invite submissions to the IROS workshop “Insect-Scale Autonomy.”
