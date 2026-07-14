@@ -1,32 +1,40 @@
 :root{
   /* Light theme */
-  --bg: #ffffff;
-  --panel: rgba(11,18,32,.04);
-  --panel2: rgba(11,18,32,.03);
-  --text: #0b1220;
-  --muted: rgba(11,18,32,.68);
-  --line: rgba(11,18,32,.12);
-  --link: #0b5fff;
+  --bg: #fffdf8;
+  --panel: rgba(120,72,12,.055);
+  --panel2: rgba(120,72,12,.035);
+  --text: #17130c;
+  --muted: rgba(23,19,12,.68);
+  --line: rgba(120,72,12,.16);
+
+  --link: #b77900;
+  --link-hover: #8f5e00;
+  --link-text: #ffffff;
+
   --max: 1080px;
   --r: 18px;
 
-  --bg-grad-1: rgba(245, 158, 11, .11);
-  --bg-grad-2: rgba(217, 119, 6, .07);
+  --bg-grad-1: rgba(245,158,11,.11);
+  --bg-grad-2: rgba(217,119,6,.07);
 }
 
 :root[data-theme="dark"]{
   /* Dark theme */
-  --bg: #070a0f;
+  --bg: #08090b;
   --panel: rgba(255,255,255,.06);
   --panel2: rgba(255,255,255,.04);
-  --text: #eaf0f7;
-  --muted: rgba(234,240,247,.72);
-  --line: rgba(234,240,247,.14);
-  --link: #1fb6ff;
+  --text: #f3f1ea;
+  --muted: rgba(243,241,234,.72);
+  --line: rgba(243,241,234,.14);
 
-  --bg-grad-1: rgba(245,158,11,.14);
-  --bg-grad-2: rgba(251,191,36,.08);
+  --link: #e6ad35;
+  --link-hover: #f4c45f;
+  --link-text: #17130c;
+
+  --bg-grad-1: rgba(202,138,4,.16);
+  --bg-grad-2: rgba(146,64,14,.10);
 }
+
 
 *{
   box-sizing: border-box;
@@ -528,27 +536,31 @@ tr:last-child td{
   margin-top: 14px;
   padding: 9px 16px;
 
-  border: 1px solid color-mix(in srgb, var(--link) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--link) 72%, transparent);
   border-radius: 999px;
 
   background: var(--link);
-  color: #ffffff;
+  color: var(--link-text);
 
   font-size: 14px;
   font-weight: 650;
   line-height: 1.2;
   text-decoration: none;
 
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--link) 22%, transparent);
+
   transition:
     transform 150ms ease,
-    filter 150ms ease;
+    background-color 150ms ease,
+    box-shadow 150ms ease;
 }
 
 .openreview-button:hover{
-  color: #ffffff;
+  background: var(--link-hover);
+  color: var(--link-text);
   text-decoration: none;
-  filter: brightness(.92);
   transform: translateY(-1px);
+  box-shadow: 0 9px 24px color-mix(in srgb, var(--link) 30%, transparent);
 }
 
 .openreview-button:active{
