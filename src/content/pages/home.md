@@ -14,10 +14,10 @@ Advances in robotics have made it possible to build increasingly small and agile
 - ![Resource-aware perception and learning](/focus/perception.jpg)
   **A. Resource-aware perception and learning**
 
-- ![Mechanics, actuation, design, and control](/focus/mechanics.jpg)
+- ![Mechanics, actuation, design, and control](/focus/mechanical.jpg)
   **B. Mechanics/actuation/design with control**
 
-- ![On-board compute, edge AI hardware, and deployment](/focus/edge-ai.jpg)
+- ![On-board compute, edge AI hardware, and deployment](/focus/edgeAI.jpg)
   **C. On-board compute, edge AI hardware, and deployment**
 
 ## Format
