@@ -26,7 +26,7 @@ We invite submissions in two tracks:
 
 ## A. Paper Track
 The Paper Track is intended for contributed papers describing novel research, work in progress, benchmark proposals, systems, methods, or position papers relevant to insect-scale or resource-constrained autonomy.
-Submissions should be 2–4 pages, including figures but excluding references, in the IEEE conference paper format.
+Submissions should be 3–4 pages, including figures but excluding references, in the IEEE conference paper format.
 - LaTeX template: [ieeeconf.zip](https://ras.papercept.net/conferences/support/files/ieeeconf.zip) (select US Letter paper in root.tex)
 - MS-Word template: [ieeeconf_letter.dot](https://ras.papercept.net/conferences/support/files/ieeeconf_letter.dot)
   
