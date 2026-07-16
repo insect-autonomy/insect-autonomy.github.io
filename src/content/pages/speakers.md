@@ -12,7 +12,7 @@ confirmed:
     scholar: ""
     linkedin: ""
   - name: "Vijay Janapa Reddi"
-    affiliation: "Harvard"
+    affiliation: "Harvard University"
     status: ""
     photo: "reddi.jpg"
     website: ""
