@@ -9,6 +9,9 @@ const person = z.object({
   scholar: z.string().optional(),
   linkedin: z.string().optional(),
   twitter: z.string().optional(),
+  talkTitle: z.string().optional(),
+  abstract: z.string().optional(),
+  bio: z.string().optional(),
 });
 
 const organizer = z.object({

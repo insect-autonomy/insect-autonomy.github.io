@@ -1,0 +1,201 @@
+---
+const { people = [] } = Astro.props;
+
+const talks = people.filter((person) => person.talkTitle && person.abstract);
+const talkId = (name) =>
+  `talk-${name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")}`;
+---
+
+{talks.length > 0 && (
+  <section class="talks" aria-labelledby="invited-talks-heading">
+    <header class="talks-heading">
+      <h2 id="invited-talks-heading">Invited Talks</h2>
+      <p>Talk abstracts and speaker biographies are added as they are confirmed.</p>
+    </header>
+
+    <div class="talk-list">
+      {talks.map((person) => (
+        <article id={talkId(person.name)} class="talk-card">
+          <div class="speaker-panel">
+            <img
+              src={person.photo}
+              alt={person.name}
+              loading="lazy"
+              width="128"
+              height="128"
+            />
+            <div>
+              <p class="label">Speaker</p>
+              <h3>{person.name}</h3>
+              <p class="affiliation">{person.affiliation}</p>
+            </div>
+          </div>
+
+          <div class="talk-body">
+            <p class="label">Invited talk</p>
+            <h3 class="talk-title">{person.talkTitle}</h3>
+
+            <section class="copy-block" aria-labelledby={`${talkId(person.name)}-abstract`}>
+              <h4 id={`${talkId(person.name)}-abstract`}>Abstract</h4>
+              <p>{person.abstract}</p>
+            </section>
+
+            {person.bio && (
+              <section class="copy-block" aria-labelledby={`${talkId(person.name)}-bio`}>
+                <h4 id={`${talkId(person.name)}-bio`}>Speaker Bio</h4>
+                <p>{person.bio}</p>
+              </section>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .talks {
+    margin-top: 42px;
+  }
+
+  .talks-heading {
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .talks-heading h2 {
+    margin: 0 0 4px;
+  }
+
+  .talks-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .talk-list {
+    display: grid;
+    gap: 20px;
+  }
+
+  .talk-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 30px;
+    padding: 26px;
+    scroll-margin-top: 110px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--panel2);
+    overflow: hidden;
+  }
+
+  .talk-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 24px;
+    right: 24px;
+    height: 3px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--link) 58%, transparent);
+  }
+
+  .speaker-panel {
+    align-self: start;
+  }
+
+  .speaker-panel img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 4px 0 18px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    object-fit: cover;
+  }
+
+  .label {
+    margin: 0 0 6px;
+    color: var(--link);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .speaker-panel h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .affiliation {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .talk-body {
+    min-width: 0;
+  }
+
+  .talk-title {
+    max-width: 760px;
+    margin: 0 0 22px;
+    font-size: clamp(23px, 3vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -.015em;
+  }
+
+  .copy-block + .copy-block {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .copy-block h4 {
+    margin: 0 0 8px;
+    font-size: 15px;
+  }
+
+  .copy-block p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.72;
+  }
+
+  @media (max-width: 760px) {
+    .talks {
+      margin-top: 34px;
+    }
+
+    .talk-card {
+      grid-template-columns: 1fr;
+      gap: 22px;
+      padding: 22px;
+    }
+
+    .speaker-panel {
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      gap: 16px;
+      align-items: center;
+    }
+
+    .speaker-panel img {
+      width: 88px;
+      height: 88px;
+      margin: 0;
+    }
+
+    .talk-title {
+      margin-bottom: 18px;
+    }
+  }
+</style>
