@@ -57,6 +57,16 @@ organizers:
     linkedin: "https://www.linkedin.com/in/heikokabutz/"
     github: "https://github.com/HKabutz"
     lab: "Animal Inspired Movement and Robotics Laboratory (AIM-RL)"
+  
+  - name: "Naitri Rajyaguru"
+    affiliation: "University of Maryland, College Park"
+    photo: "naitri.jpg"
+    website: "https://naitri.github.io/"
+    labWebsite: "https://prg.cs.umd.edu/"
+    scholar: "https://scholar.google.com/citations?hl=en&user=ccttuecAAAAJ"
+    linkedin: "https://www.linkedin.com/in/naitri-rajyaguru/"
+    github: "https://github.com/naitri"
+    lab: "Perception and Robotics Group (PRG)"
 ---
 
 The workshop is organized by researchers spanning insect-scale robotics, bio-inspired design, perception, control, and resource-constrained autonomy.
