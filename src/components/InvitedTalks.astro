@@ -1,4 +1,4 @@
----
+﻿---
 const { people = [] } = Astro.props;
 
 const talks = people.filter((person) => person.talkTitle && person.abstract);
@@ -168,6 +168,8 @@ const talkId = (name) =>
     margin: 0;
     color: var(--muted);
     line-height: 1.72;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   @media (max-width: 760px) {
@@ -199,3 +201,5 @@ const talkId = (name) =>
     }
   }
 </style>
+
+
