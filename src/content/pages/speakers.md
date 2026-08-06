@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Speakers"
 description: "Invited speakers and status"
 updated: "2026-08-06"
@@ -8,23 +8,25 @@ confirmed:
     affiliation: "University of Maryland, College Park"
     status: ""
     photo: "/speakers/aloimonos.jpg"
-    website: "http://prg.cs.umd.edu/"
-    scholar: ""
-    linkedin: ""
+    website: "https://www.prg.cs.umd.edu/"
+    scholar: "https://scholar.google.com/citations?user=7QmEsOwAAAAJ"
+    linkedin: "https://www.linkedin.com/in/yiannis-aloimonos-6374865"
+
   - name: "Vijay Janapa Reddi"
     affiliation: "Harvard University"
     status: ""
     photo: "/speakers/reddi.jpg"
-    website: ""
-    scholar: ""
-    linkedin: ""
+    website: "https://vijay.seas.harvard.edu/"
+    scholar: "https://scholar.google.com/citations?hl=en&user=gy4UVGcAAAAJ"
+    linkedin: "https://www.linkedin.com/in/vijay-janapa-reddi-63a6a173"
+
   - name: "Frances Chance"
     affiliation: "Sandia National Laboratories"
     status: ""
     photo: "/speakers/chance.jpg"
-    website: ""
-    scholar: ""
-    linkedin: ""
+    website: "https://www.sandia.gov/ccr/staff/frances-s-chance/"
+    scholar: "https://scholar.google.com/scholar?hl=en&q=%22Frances+S.+Chance%22"
+    linkedin: "https://www.linkedin.com/in/frances-chance-7528a266"
     talkTitle: "The Computer Bug You Want: Insect-Inspired Neuromorphic Primitives for Energy-Efficient Computation"
     abstract: >-
       Animals excel at a range of essential behaviors, for example hunting or
@@ -50,24 +52,22 @@ confirmed:
       Research at Sandia National Laboratories. Her research applies knowledge
       of biological nervous systems and neural circuit operations to develop and
       constrain novel neural-informed algorithms and brain-based technologies.
+
   - name: "Prophesee AI"
     affiliation: "Prophesee AI"
     status: ""
     photo: "/speakers/prophesee.jpg"
-    website: ""
+    website: "https://www.prophesee.ai/"
     scholar: ""
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/company/chronocam"
 
-# pending:
-#   - name: "Michele Magno"
-#     affiliation: "(add affiliation)"
-#     status: "Pending"
-#     photo: "/speakers/placeholder.jpg"
-#   - name: "Daniela Rus"
-#     affiliation: "(add affiliation)"
-#     status: "Pending"
-#     photo: "/speakers/placeholder.jpg"
+  - name: "Elia Cereda"
+    affiliation: "IDSIA USI-SUPSI"
+    status: ""
+    photo: "/speakers/cereda.jpg"
+    website: "https://idsia-robotics.github.io/nanorobotics/"
+    scholar: "https://scholar.google.ch/citations?user=GPJziQsAAAAJ"
+    linkedin: "https://www.linkedin.com/in/elia-cereda-65093bb1"
 ---
 
 Listed below are the confirmed invited speakers for Insect Autonomy Workshop at IROS 2026. More speakers will be updated soon.
-

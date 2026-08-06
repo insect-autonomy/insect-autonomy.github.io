@@ -19,6 +19,10 @@ const organizer = z.object({
   affiliation: z.string(),
   photo: z.string(),
   website: z.string().optional(),
+  labWebsite: z.string().optional(),
+  scholar: z.string().optional(),
+  linkedin: z.string().optional(),
+  github: z.string().optional(),
   lab: z.string().optional(),
 });
 

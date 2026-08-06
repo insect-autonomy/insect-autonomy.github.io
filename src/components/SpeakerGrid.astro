@@ -12,31 +12,95 @@ const talkId = (name) =>
   <h2>{title}</h2>
 
   <div class="grid">
-    {people.map((person) => (
-      <article class="speaker-card">
-        <img
-          class="avatar"
-          src={person.photo}
-          alt={person.name}
-          loading="lazy"
-          width="120"
-          height="120"
-        />
-        <div class="name">{person.name}</div>
-        <div class="role">{person.affiliation}</div>
-        {person.status && <div class="meta">{person.status}</div>}
+    {people.map((person) => {
+      const hasLinks = person.website || person.scholar || person.linkedin;
 
-        {person.talkTitle && (
-          <a
-            class="talk-link"
-            href={`#${talkId(person.name)}`}
-            aria-label={`View talk details for ${person.name}`}
-          >
-            Talk details <span aria-hidden="true">↓</span>
-          </a>
-        )}
-      </article>
-    ))}
+      return (
+        <article class="speaker-card">
+          <img
+            class="avatar"
+            src={person.photo}
+            alt={person.name}
+            loading="lazy"
+            width="120"
+            height="120"
+          />
+
+          <div class="name">{person.name}</div>
+          <div class="role">{person.affiliation}</div>
+          {person.status && <div class="meta">{person.status}</div>}
+
+          {(hasLinks || person.talkTitle) && (
+            <div class="card-actions">
+              {hasLinks && (
+                <div class="social-links" aria-label={`${person.name} links`}>
+                  {person.website && (
+                    <a
+                      class="icon-link"
+                      href={person.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${person.name} website`}
+                      title="Website"
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M3 12h18"></path>
+                        <path d="M12 3a15 15 0 0 1 0 18"></path>
+                        <path d="M12 3a15 15 0 0 0 0 18"></path>
+                      </svg>
+                    </a>
+                  )}
+
+                  {person.scholar && (
+                    <a
+                      class="icon-link"
+                      href={person.scholar}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${person.name} Google Scholar`}
+                      title="Google Scholar"
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 9.5 12 4l9 5.5-9 5.5-9-5.5Z"></path>
+                        <path d="M7 12.5V17c2.8 2 7.2 2 10 0v-4.5"></path>
+                      </svg>
+                    </a>
+                  )}
+
+                  {person.linkedin && (
+                    <a
+                      class="icon-link linkedin-link"
+                      href={person.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${person.name} LinkedIn`}
+                      title="LinkedIn"
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.5 8.5H3.5V20H6.5V8.5Z"></path>
+                        <path d="M5 3.7a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6Z"></path>
+                        <path d="M10 8.5h3v1.6c.9-1.2 2.2-2 4-2 3.1 0 4.5 2 4.5 5.5V20h-3v-5.8c0-2-.7-3.2-2.4-3.2-1.9 0-3.1 1.3-3.1 3.7V20h-3V8.5Z"></path>
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              )}
+
+              {person.talkTitle && (
+                <a
+                  class="talk-link"
+                  href={`#${talkId(person.name)}`}
+                  aria-label={`View talk details for ${person.name}`}
+                >
+                  Talk details <span aria-hidden="true">↓</span>
+                </a>
+              )}
+            </div>
+          )}
+        </article>
+      );
+    })}
   </div>
 </section>
 
@@ -52,15 +116,16 @@ const talkId = (name) =>
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 18px;
   }
 
   .speaker-card {
     display: flex;
+    min-height: 320px;
     flex-direction: column;
     align-items: center;
-    padding: 14px;
+    padding: 16px 12px;
     border: 1px solid var(--line);
     border-radius: 16px;
     background: var(--panel2);
@@ -82,18 +147,77 @@ const talkId = (name) =>
     color: var(--text);
     font-size: 18px;
     font-weight: 750;
+    line-height: 1.25;
   }
 
   .role {
-    margin: 0 0 8px;
+    margin: 0;
     color: var(--muted);
     font-size: 13px;
+    line-height: 1.45;
   }
 
   .meta {
+    margin-top: 6px;
     color: var(--muted);
     font-size: 12px;
     font-style: italic;
+  }
+
+  .card-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 14px;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+    color: var(--muted);
+    transition:
+      color 150ms ease,
+      border-color 150ms ease,
+      background-color 150ms ease,
+      transform 150ms ease;
+  }
+
+  .icon-link:hover {
+    color: var(--link);
+    border-color: color-mix(in srgb, var(--link) 55%, var(--line));
+    background: color-mix(in srgb, var(--link) 10%, transparent);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+
+  .icon-link svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .linkedin-link svg {
+    fill: currentColor;
+    stroke: none;
   }
 
   .talk-link {
@@ -101,7 +225,6 @@ const talkId = (name) =>
     align-items: center;
     justify-content: center;
     gap: 7px;
-    margin-top: auto;
     padding: 7px 12px;
     border: 1px solid color-mix(in srgb, var(--link) 50%, var(--line));
     border-radius: 999px;
@@ -117,15 +240,13 @@ const talkId = (name) =>
     text-decoration: none;
   }
 
-  @media (max-width: 1000px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
   @media (max-width: 560px) {
     .grid {
       grid-template-columns: 1fr;
+    }
+
+    .speaker-card {
+      min-height: 0;
     }
   }
 </style>
