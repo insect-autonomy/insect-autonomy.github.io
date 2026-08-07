@@ -1,0 +1,74 @@
+---
+const { filePath } = Astro.props;
+
+const editUrl =
+  `https://github.com/insect-autonomy/insect-autonomy.github.io/edit/main/${filePath}`;
+---
+
+<div class="edit-page-container">
+  <a
+    class="edit-page-link"
+    href={editUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Edit this page on GitHub"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2.7a9.3 9.3 0 0 0-2.94 18.12c.47.09.64-.2.64-.45v-1.8c-2.62.57-3.17-1.11-3.17-1.11-.43-1.1-1.05-1.39-1.05-1.39-.86-.59.06-.58.06-.58.95.07 1.45.98 1.45.98.85 1.45 2.22 1.03 2.76.79.09-.61.33-1.03.6-1.27-2.09-.24-4.29-1.05-4.29-4.6 0-1.02.36-1.85.97-2.5-.1-.24-.42-1.19.09-2.47 0 0 .79-.25 2.56.96a8.9 8.9 0 0 1 4.66 0c1.77-1.21 2.56-.96 2.56-.96.51 1.28.19 2.23.09 2.47.61.65.97 1.48.97 2.5 0 3.56-2.21 4.36-4.31 4.59.34.29.64.86.64 1.74v2.58c0 .25.17.55.65.45A9.3 9.3 0 0 0 12 2.7Z"></path>
+    </svg>
+    <span>Edit this page on GitHub</span>
+  </a>
+</div>
+
+<style>
+.edit-page-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: var(--max);
+  margin: 8px auto 22px;
+  padding: 0 18px;
+}
+
+  .edit-page-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 13px;
+    border: 1px solid color-mix(in srgb, var(--link) 55%, var(--line));
+    border-radius: 10px;
+    background: var(--panel2);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 650;
+    line-height: 1;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(11, 18, 32, 0.05);
+    transition:
+      transform 150ms ease,
+      border-color 150ms ease,
+      background-color 150ms ease;
+  }
+
+  .edit-page-link:hover {
+    transform: translateY(-1px);
+    border-color: var(--link);
+    background: color-mix(in srgb, var(--link) 8%, var(--panel2));
+    text-decoration: none;
+  }
+
+  .edit-page-link svg {
+    width: 17px;
+    height: 17px;
+    fill: currentColor;
+    flex: 0 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .edit-page-container {
+      justify-content: center;
+      width: calc(100% - 28px);
+      margin-bottom: 18px;
+    }
+  }
+</style>

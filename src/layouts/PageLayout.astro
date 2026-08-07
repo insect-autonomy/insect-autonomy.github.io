@@ -2,8 +2,22 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import EditPageLink from "../components/EditPageLink.astro";
 
 const { title, description } = Astro.props;
+
+const normalizedPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+
+const editableFiles = {
+  "/": "src/content/pages/home.md",
+  "/cfp": "src/content/pages/cfp.md",
+  "/program": "src/content/pages/program.md",
+  "/speakers": "src/content/pages/speakers.md",
+  "/organizers": "src/content/pages/organizers.md",
+};
+
+const editableFile =
+  editableFiles[normalizedPath as keyof typeof editableFiles];
 ---
 
 <html lang="en">
@@ -59,6 +73,8 @@ const { title, description } = Astro.props;
     <main class="container">
       <slot />
     </main>
+
+    {editableFile && <EditPageLink filePath={editableFile} />}
 
     <Footer />
   </body>
