@@ -62,7 +62,7 @@ confirmed:
     linkedin: "https://www.linkedin.com/company/chronocam"
 
   - name: "Elia Cereda"
-    affiliation: "IDSIA USI-SUPSI"
+    affiliation: "Dalle Molle Institute for Artificial Intelligence"
     status: ""
     photo: "/speakers/cereda.jpg"
     website: "https://idsia-robotics.github.io/nanorobotics/"
