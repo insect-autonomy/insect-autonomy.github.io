@@ -1,7 +1,7 @@
 ---
 title: "Organizers"
 description: "Workshop organizing committee"
-updated: "2026-08-06"
+updated: "2026-08-17"
 
 organizers:
   - name: "Chahat Singh"
@@ -57,7 +57,7 @@ organizers:
     linkedin: "https://www.linkedin.com/in/heikokabutz/"
     github: "https://github.com/HKabutz"
     lab: "Animal Inspired Movement and Robotics Laboratory (AIM-RL)"
-  
+
   - name: "Naitri Rajyaguru"
     affiliation: "University of Maryland, College Park"
     photo: "naitri.jpg"
@@ -67,6 +67,15 @@ organizers:
     linkedin: "https://www.linkedin.com/in/naitri-rajyaguru/"
     github: "https://github.com/naitri"
     lab: "Perception and Robotics Group (PRG)"
+
+  - name: "Shanelle Clarke"
+    affiliation: "University of Colorado Boulder"
+    photo: "shanelle.jpg"
+    website: "https://www.colorado.edu/pac/shanelle-clark"
+    labWebsite: "http://www.boulderbprl.com/"
+    scholar: "https://scholar.google.com/citations?user=_sTTMMUAAAAJ&hl=en&oi=ao"
+    linkedin: "https://www.linkedin.com/in/shanelle-clarke-phd-25a990a1"
+    lab: "Bio-Inspired Perception and Robotics Laboratory (BPRL)"
 ---
 
 The workshop is organized by researchers spanning insect-scale robotics, bio-inspired design, perception, control, and resource-constrained autonomy.
