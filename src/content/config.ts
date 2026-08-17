@@ -11,6 +11,7 @@ const person = z.object({
   twitter: z.string().optional(),
   talkTitle: z.string().optional(),
   abstract: z.string().optional(),
+  socraticDialog: z.string().optional(),
   bio: z.string().optional(),
 });
 
