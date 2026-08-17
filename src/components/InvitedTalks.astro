@@ -1,4 +1,4 @@
-﻿---
+---
 const { people = [] } = Astro.props;
 
 const talks = people.filter((person) => person.talkTitle && person.abstract);
@@ -42,6 +42,10 @@ const talkId = (name) =>
               <h4 id={`${talkId(person.name)}-abstract`}>Abstract</h4>
               <p>{person.abstract}</p>
             </section>
+
+            {person.socraticDialog && (
+              <p class="socratic-dialog"><em>{person.socraticDialog}</em></p>
+            )}
 
             {person.bio && (
               <section class="copy-block" aria-labelledby={`${talkId(person.name)}-bio`}>
@@ -172,6 +176,18 @@ const talkId = (name) =>
     text-justify: inter-word;
   }
 
+  .socratic-dialog {
+    margin: 18px 0 0;
+    color: var(--muted);
+    line-height: 1.72;
+  }
+
+  .socratic-dialog + .copy-block {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
   @media (max-width: 760px) {
     .talks {
       margin-top: 34px;
@@ -201,5 +217,3 @@ const talkId = (name) =>
     }
   }
 </style>
-
-
