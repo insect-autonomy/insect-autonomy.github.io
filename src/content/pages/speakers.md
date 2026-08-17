@@ -35,7 +35,7 @@ confirmed:
 
       The guiding question is not “how do I reconstruct the world?” but “what is the
       least a robot must perceive and remember in order to act?”
-    socraticDialog: "A Socratic Dialog – Yiannis Aloimonos and Naitri Rajyaguru, Computer Vision Lab, Univ. of Maryland"
+    abstractCredit: "A Socratic Dialog – Yiannis Aloimonos and Naitri Rajyaguru, Computer Vision Lab, Univ. of Maryland"
     bio: >-
       Yiannis Aloimonos is Professor of Computational Vision and Intelligence at the
       Department of Computer Science, University of Maryland, College Park, and the
