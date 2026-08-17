@@ -43,8 +43,8 @@ const talkId = (name) =>
               <p>{person.abstract}</p>
             </section>
 
-            {person.socraticDialog && (
-              <p class="socratic-dialog"><em>{person.socraticDialog}</em></p>
+            {person.abstractCredit && (
+              <p class="abstract-credit"><em>{person.abstractCredit}</em></p>
             )}
 
             {person.bio && (
@@ -176,13 +176,13 @@ const talkId = (name) =>
     text-justify: inter-word;
   }
 
-  .socratic-dialog {
+  .abstract-credit {
     margin: 18px 0 0;
     color: var(--muted);
     line-height: 1.72;
   }
 
-  .socratic-dialog + .copy-block {
+  .abstract-credit + .copy-block {
     margin-top: 22px;
     padding-top: 20px;
     border-top: 1px solid var(--line);
