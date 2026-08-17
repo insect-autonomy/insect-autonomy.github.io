@@ -11,7 +11,7 @@ confirmed:
     website: "https://www.prg.cs.umd.edu/"
     scholar: "https://scholar.google.com/citations?user=7QmEsOwAAAAJ"
     linkedin: "https://www.linkedin.com/in/yiannis-aloimonos-6374865"
-    talkTitle: "PURPOSIVE MEMORY AND PURPOSIVE PERCEPTION: A key to insect-scale autonomy"
+    talkTitle: "Purposive Memory and Purposive Perception: A key to insect-scale autonomy"
     abstract: >-
       Robots are built to act in the real world; at the insect scale, power,
       memory, sensing, and computation become severe constraints. We propose a
