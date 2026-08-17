@@ -11,6 +11,45 @@ confirmed:
     website: "https://www.prg.cs.umd.edu/"
     scholar: "https://scholar.google.com/citations?user=7QmEsOwAAAAJ"
     linkedin: "https://www.linkedin.com/in/yiannis-aloimonos-6374865"
+    talkTitle: "PURPOSIVE MEMORY AND PURPOSIVE PERCEPTION: A key to insect-scale autonomy"
+    abstract: >-
+      Robots are built to act in the real world; at the insect scale, power,
+      memory, sensing, and computation become severe constraints. We propose a
+      different foundation for autonomy: a purposive perception–memory–action loop.
+      Our central thesis is that navigation is not primarily a mapping problem; it
+      is a memory problem, shaped by what perception chooses to extract for action.
+
+      Insects provide a biological proof of principle. Bees, ants, and flies navigate
+      complex environments with remarkably small nervous systems by extracting
+      behaviorally relevant sensory information and maintaining compact navigational
+      variables. What we take from insects is a computational principle, not a blueprint:
+      perceive only what updates the task state, and remember only what must persist for
+      future action.
+
+      For robotics, this means memory should match the structure of the variable it
+      represents: a ring for heading, and richer structures only when the behavior
+      demands them. Through experiments in purposive perception and structured spatial
+      memory, we show how such frugal representations keep a robot acting under
+      degraded and intermittent sensing, showing how frugality and structure can
+      become sources of robustness.
+
+      The guiding question is not “how do I reconstruct the world?” but “what is the
+      least a robot must perceive and remember in order to act?”
+    bio: >-
+      Yiannis Aloimonos is Professor of Computational Vision and Intelligence at the
+      Department of Computer Science, University of Maryland, College Park, and the
+      Director of the Computer Vision Laboratory at the Institute for Advanced
+      Computer Studies (UMIACS). He is also affiliated with the Institute for Systems
+      Research and the Neural and Cognitive Science Program. He was born in Sparta,
+      Greece and studied Mathematics in Athens and Computer Science at the University
+      of Rochester, NY (PhD 1990). He is interested in Active Perception and the
+      modeling of vision as an active, dynamic process for real time robotic systems.
+      For the past five years he has been working on bridging signals and symbols,
+      specifically on the relationship of vision to reasoning, action and language.
+      He received the Presidential Young Investigator Award from President Bush and
+      the Bodossaki Prize in Artificial Intelligence. He is an IEEE Fellow.
+
+      A Socratic Dialog – Yiannis Aloimonos and Naitri Rajyaguru, Computer Vision Lab, Univ. of Maryland
 
   - name: "Vijay Janapa Reddi"
     affiliation: "Harvard University"
