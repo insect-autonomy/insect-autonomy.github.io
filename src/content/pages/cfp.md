@@ -1,7 +1,7 @@
 ---
 title: "Call for Papers"
 description: "Submission information and important dates"
-updated: "2026-07-10"
+updated: "2026-08-23"
 ---
 
 ## Call for Papers / Posters
@@ -120,13 +120,21 @@ Submitted papers and posters will be considered for workshop awards. Awards may 
 
 Award decisions will be based on technical merit, originality, relevance to the workshop theme, quality of presentation, and potential impact on the field.
 
+# Post-Workshop Perspective Paper
+
+Following the workshop, the organizers plan to coordinate a community perspective paper on the future of insect-scale autonomy. The paper will synthesize insights from the invited talks, contributed work, posters, and panel discussion; identify shared technical bottlenecks, benchmark and evaluation needs, and near-term research opportunities; and outline a roadmap for reliable autonomy under severe resource constraints.
+
+Participation in the perspective paper will be voluntary. Workshop speakers, authors, and participants who contribute to the discussion will be invited to express interest in joining the writing effort. Authorship and contributions will be determined transparently based on participation in developing the manuscript. Submission to the workshop does not guarantee authorship and is not required for participation in the perspective-paper effort.
+
 # Organizers
 - Chahat Singh, University of Colorado Boulder
 - Kaushik Jayaram, Imperial College London
 - Sean J. Humbert, University of Colorado Boulder
-- Guido de Croon, Delft University of Technology
+- Guido de Croon, TU Delft
 - Cornelia Fermüller, University of Maryland, College Park
 - Heiko Kabutz, University of Colorado Boulder
+- Naitri Rajyaguru, University of Maryland, College Park
+- Shanelle Clarke, University of Colorado Boulder
 
 
 
