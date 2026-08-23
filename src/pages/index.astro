@@ -37,7 +37,7 @@ const data = entry.data;
         >
           Submit on OpenReview
           <span aria-hidden="true">→</span>
-        </a>        
+        </a>
 
       </div>
     </div>
@@ -48,3 +48,117 @@ const data = entry.data;
     </div>
   </section>
 </PageLayout>
+
+<style is:global>
+  .focus-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0 28px;
+  }
+
+  .focus-card{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--panel) 82%, transparent);
+    transition:
+      transform 170ms ease,
+      border-color 170ms ease,
+      box-shadow 170ms ease,
+      background-color 170ms ease;
+  }
+
+  .focus-card:hover{
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--link) 32%, var(--line));
+    background: color-mix(in srgb, var(--link) 5%, var(--panel));
+    box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  }
+
+  .prose .focus-card img{
+    width: min(100%, 280px);
+    height: auto;
+    margin: 0 auto 14px;
+    border-radius: 12px;
+    box-shadow: none;
+  }
+
+  .prose .focus-card img:hover{
+    transform: none;
+    box-shadow: none;
+  }
+
+  .focus-card h3{
+    margin: 0 0 10px;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .focus-card > p{
+    margin: 0 0 16px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .focus-question{
+    margin-top: auto;
+    padding: 13px 14px 14px;
+    border-left: 3px solid color-mix(in srgb, var(--link) 72%, transparent);
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--link) 8%, var(--panel));
+  }
+
+  .focus-question span{
+    display: block;
+    margin-bottom: 7px;
+    color: var(--link);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .065em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .focus-question p{
+    margin: 0;
+    color: var(--text);
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 900px){
+    .focus-grid{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .focus-card:last-child{
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 640px){
+    .focus-grid{
+      grid-template-columns: 1fr;
+    }
+
+    .focus-card:last-child{
+      grid-column: auto;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .focus-card{
+      transition: none;
+    }
+
+    .focus-card:hover{
+      transform: none;
+    }
+  }
+</style>
