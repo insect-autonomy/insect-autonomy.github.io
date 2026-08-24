@@ -11,6 +11,12 @@ const data = entry.data;
 
 <PageLayout title={data.title} description={data.description}>
 
+  <aside class="deadline-notice" aria-label="Submission deadline extension">
+    <strong>Submission deadline extended</strong>
+    <span>Paper and poster submissions are now due September 1, 2026, at 11:59 PM AoE.</span>
+    <a href="/cfp/">View submission details <span aria-hidden="true">→</span></a>
+  </aside>
+
   <section class="hero">
     <div class="hero-grid">
       <div>
@@ -50,6 +56,40 @@ const data = entry.data;
 </PageLayout>
 
 <style is:global>
+  .deadline-notice{
+    display: flex;
+    gap: 14px 22px;
+    align-items: center;
+    margin: 22px 0 0;
+    padding: 14px 18px;
+    border: 1px solid color-mix(in srgb, #d99a00 52%, var(--line));
+    border-radius: 12px;
+    background: color-mix(in srgb, #f4bd32 18%, var(--panel));
+    color: var(--text);
+  }
+
+  .deadline-notice strong{
+    color: #a86e00;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  :root[data-theme="dark"] .deadline-notice strong{
+    color: #fff1bd;
+  }
+
+  .deadline-notice > span{
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .deadline-notice a{
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
   .focus-grid{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -143,6 +183,20 @@ const data = entry.data;
   }
 
   @media (max-width: 640px){
+    .deadline-notice{
+      display: block;
+    }
+
+    .deadline-notice strong,
+    .deadline-notice > span,
+    .deadline-notice a{
+      display: block;
+    }
+
+    .deadline-notice > span{
+      margin: 5px 0 8px;
+    }
+
     .focus-grid{
       grid-template-columns: 1fr;
     }
