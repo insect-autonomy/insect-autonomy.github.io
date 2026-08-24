@@ -9,7 +9,7 @@ updated: "2026-08-23"
 
 ### Date: October 1, 2026
 ### Website: https://insect-autonomy.github.io/
-### Deadline: Aug 24, 2026
+### Deadline: Sep 1, 2026
 ### [Submit on OpenReview](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
 ---
 
@@ -93,7 +93,7 @@ For questions about submissions, please contact: Chahat Singh (chahat.singh@colo
 ---
 
 # Important Dates
-- Paper / poster submission deadline: August 24, 2026, 11:59 PM AoE
+- Paper / poster submission deadline: September 1, 2026, 11:59 PM AoE
 - Acceptance notification: September 7, 2026
 - Final version deadline: September 14, 2026
 - Workshop date: October 1, 2026
