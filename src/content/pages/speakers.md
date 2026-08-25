@@ -121,14 +121,6 @@ confirmed:
       insect-inspired vision dates to 1999, when he built and flew a neuromorphic
       optical flow sensor on a small air platform.
 
-  - name: "Prophesee AI"
-    affiliation: "Prophesee AI"
-    status: ""
-    photo: "/speakers/prophesee.jpg"
-    website: "https://www.prophesee.ai/"
-    scholar: ""
-    linkedin: "https://www.linkedin.com/company/chronocam"
-
   - name: "Elia Cereda"
     affiliation: "Dalle Molle Institute for Artificial Intelligence"
     status: ""
