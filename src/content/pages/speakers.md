@@ -1,7 +1,7 @@
 ---
 title: "Speakers"
 description: "Invited speakers and status"
-updated: "2026-08-17"
+updated: "2026-08-24"
 
 confirmed:
   - name: "Yiannis Aloimonos"
@@ -90,6 +90,36 @@ confirmed:
       Research at Sandia National Laboratories. Her research applies knowledge
       of biological nervous systems and neural circuit operations to develop and
       constrain novel neural-informed algorithms and brain-based technologies.
+
+  - name: "Geoffrey Barrows"
+    affiliation: "Centeye, Inc."
+    status: ""
+    photo: "/speakers/barrows.jpg"
+    website: "https://www.centeye.com/"
+    scholar: "https://scholar.google.com/scholar?q=%22Geoffrey+L.+Barrows%22"
+    linkedin: "https://www.linkedin.com/in/geoffrey-l-barrows"
+    talkTitle: "What can you do with a few thousand pixels?"
+    abstract: >-
+      The costliest element in the SWaP budget of a small robotic vision system is
+      generally not the image sensor but the processing behind it. In earlier work
+      we implemented several vision-based flight control tasks using just tens to
+      hundreds of pixels. Reflections on what worked, and on the differences between
+      contemporary computer vision and biological vision, led us to a metric we call
+      pixels per frame: the visual motion, measured in pixels or photoreceptors,
+      accruing in one frame or update. Conventional computer vision operates above
+      one pixel per frame, which carries steep downstream processing costs. Our
+      implementations operate below this threshold, as do event cameras, and we
+      argue biological systems do as well. Below that line, new kinds of image
+      sensor arrays and new classes of algorithms become available, and the
+      processing burden drops sharply. This talk covers the metric, example image
+      sensors, and use cases.
+    bio: >-
+      Geoffrey Barrows is the founder of Centeye, Inc., where he develops
+      neuromorphic vision chips and low-SWaP sensing systems for difficult
+      applications. He holds a PhD from the University of Maryland, College Park,
+      and previously worked at the Naval Research Laboratory. His interest in
+      insect-inspired vision dates to 1999, when he built and flew a neuromorphic
+      optical flow sensor on a small air platform.
 
   - name: "Prophesee AI"
     affiliation: "Prophesee AI"
