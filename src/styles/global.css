@@ -31,8 +31,8 @@
   --link-hover: #f4c45f;
   --link-text: #17130c;
 
-  --bg-grad-1: rgba(202,138,4,.16);
-  --bg-grad-2: rgba(146,64,14,.10);
+  --bg-grad-1: rgba(202,138,4,.055);
+  --bg-grad-2: rgba(146,64,14,.035);
 }
 
 
@@ -720,6 +720,14 @@ tr:last-child td{
     padding-bottom: calc(72px + env(safe-area-inset-bottom));
   }
 
+  .hero-grid > div:first-child{
+    text-align: center;
+  }
+
+  .badges{
+    justify-content: center;
+  }
+
   .header{
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
@@ -867,7 +875,7 @@ tr:last-child td{
     padding-top: 3px;
     padding-bottom: 10px;
     color: var(--muted);
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .program-schedule td:nth-child(3):empty{
@@ -1089,13 +1097,15 @@ tr:last-child td{
   align-items: center;
   gap: 8px;
 
-  padding: 7px 12px;
+  padding: 9px 16px;
   border: 1px solid color-mix(in srgb, var(--link) 45%, var(--line));
   border-radius: 999px;
 
   background: color-mix(in srgb, var(--link) 10%, transparent);
   color: var(--link);
+  font-size: 14px;
   font-weight: 650;
+  line-height: 1.2;
   text-decoration: none;
 
   transition:
@@ -1109,6 +1119,29 @@ tr:last-child td{
   transform: translateY(-1px);
   background: color-mix(in srgb, var(--link) 16%, transparent);
   box-shadow: 0 8px 20px color-mix(in srgb, var(--link) 15%, transparent);
+}
+
+.cfp-prose > h3 a[href*="openreview.net"]{
+  border-color: color-mix(in srgb, var(--link) 72%, transparent);
+  background: var(--link);
+  color: var(--link-text);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--link) 22%, transparent);
+}
+
+.cfp-prose > h3 a[href*="openreview.net"]::after{
+  content: "→";
+  margin-left: 2px;
+  transition: transform 160ms ease;
+}
+
+.cfp-prose > h3 a[href*="openreview.net"]:hover{
+  background: var(--link-hover);
+  color: var(--link-text);
+  box-shadow: 0 9px 24px color-mix(in srgb, var(--link) 30%, transparent);
+}
+
+.cfp-prose > h3 a[href*="openreview.net"]:hover::after{
+  transform: translateX(3px);
 }
 
 .prose > h1,

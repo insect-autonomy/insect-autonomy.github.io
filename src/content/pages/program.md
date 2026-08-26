@@ -28,14 +28,14 @@ updated: "2026-08-26"
   </thead>
   <tbody>
     <tr><td>08:30–08:40</td><td>Introduction</td><td>Welcome and workshop overview</td></tr>
-    <tr class="session-a"><td>08:40–09:20</td><td>Keynote 1 (Session A): <a href="/speakers#talk-yiannis-aloimonos">Yiannis Aloimonos</a></td><td>Purposive Memory and Purposive Perception</td></tr>
-    <tr class="session-a"><td>09:20–10:00</td><td>Keynote 2 (Session A): <a href="/speakers#talk-frances-chance">Frances Chance</a></td><td>Insect-Inspired Neuromorphic Primitives</td></tr>
+    <tr class="session-a"><td>08:40–09:20</td><td>Keynote 1 (Session A): Yiannis Aloimonos</td><td><a href="/speakers#talk-yiannis-aloimonos">Purposive Memory and Purposive Perception</a></td></tr>
+    <tr class="session-a"><td>09:20–10:00</td><td>Keynote 2 (Session A): Frances Chance</td><td><a href="/speakers#talk-frances-chance">Insect-Inspired Neuromorphic Primitives</a></td></tr>
     <tr class="session-a"><td>10:00–10:30</td><td>Contributed Talks (Session A)</td><td>Accepted papers</td></tr>
     <tr><td>10:30–11:00</td><td>Coffee break</td><td></td></tr>
     <tr><td>11:00–12:15</td><td>Rising Star Talks</td><td>Emerging researchers</td></tr>
     <tr><td>12:15–13:30</td><td>Lunch + Early-Career Research and Career Discussion</td><td>Research ideas, career guidance, and networking</td></tr>
     <tr class="session-b"><td>13:30–14:10</td><td>Invited Keynote (Session B): Sarah Bergbreiter</td><td>Title TBD</td></tr>
-    <tr class="session-b"><td>14:10–14:35</td><td>Industry Talk (Session B): <a href="/speakers#talk-geoffrey-barrows">Geoffrey Barrows</a></td><td>What Can You Do with a Few Thousand Pixels?</td></tr>
+    <tr class="session-b"><td>14:10–14:35</td><td>Industry Talk (Session B): Geoffrey Barrows</td><td><a href="/speakers#talk-geoffrey-barrows">What Can You Do with a Few Thousand Pixels?</a></td></tr>
     <tr class="session-b"><td>14:35–14:55</td><td>Contributed Talks (Session B)</td><td>Accepted papers</td></tr>
     <tr><td>14:55–15:15</td><td>Coffee Break</td><td></td></tr>
     <tr class="session-c"><td>15:15–15:55</td><td>Keynote (Session C): Vijay Janapa Reddi</td><td>Title TBD</td></tr>

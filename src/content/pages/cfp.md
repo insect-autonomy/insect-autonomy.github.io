@@ -7,9 +7,8 @@ updated: "2026-08-23"
 ## Call for Papers / Posters
 ## IROS 2026 Workshop on Insect-Scale Autonomy
 
-### Date: October 1, 2026
-### Website: https://insect-autonomy.github.io/
-### Deadline: Sep 1, 2026
+### Workshop Date: October 1, 2026
+### Submission Deadline: Sep 1, 2026
 ### [Submit on OpenReview](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
 ---
 
