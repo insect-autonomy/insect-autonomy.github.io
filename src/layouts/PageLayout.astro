@@ -64,7 +64,8 @@ const editableFile =
 
   <script>
     const saved = localStorage.getItem("theme");
-    if (saved) document.documentElement.dataset.theme = saved;
+    const phoneViewport = window.matchMedia("(max-width: 700px)").matches;
+    document.documentElement.dataset.theme = saved ?? (phoneViewport ? "dark" : "light");
   </script>
 
   <body>
