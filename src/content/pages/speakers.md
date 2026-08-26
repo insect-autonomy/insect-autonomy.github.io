@@ -1,7 +1,7 @@
 ---
 title: "Speakers"
 description: "Invited speakers and status"
-updated: "2026-08-24"
+updated: "2026-08-26"
 
 confirmed:
   - name: "Yiannis Aloimonos"
@@ -91,6 +91,14 @@ confirmed:
       of biological nervous systems and neural circuit operations to develop and
       constrain novel neural-informed algorithms and brain-based technologies.
 
+  - name: "Sarah Bergbreiter"
+    affiliation: "Carnegie Mellon University"
+    status: ""
+    photo: "/speakers/bergbreiter.png"
+    website: "https://engineering.cmu.edu/directory/bios/bergbreiter-sarah.html"
+    scholar: "https://scholar.google.com/citations?user=SU0c5P0AAAAJ"
+    linkedin: "https://www.linkedin.com/in/sarah-bergbreiter-a9323954"
+
   - name: "Geoffrey Barrows"
     affiliation: "Centeye, Inc."
     status: ""
@@ -133,6 +141,14 @@ confirmed:
       Insect-scale robots must rely on ultra-low power resource-constrained MCUs for perception-to-action onboard intelligence. At the nano-UAV scale, i.e., 10 cm, tens of grams, and sub-100mW perception, much research concentrated on TinyML models, controllers, and          bio-inspired algorithms, while treating the underlying software infrastructure as an implementation detail. This choice is costly: across state-of-the-art nano-UAV systems, closed-loop throughput falls 16–92% short of inference workloads in isolation.  Our in-          field experiments show the lost throughput directly degrades closed-loop performance, e.g., up to 30% higher position error and mission success dropping from 100% to 40%. This talk builds on NanoCockpit, our open-source performance-optimized application framework       for the 27-gram Crazyflie that recovers the ideal throughput, now being integrated into the platform's official software. From this experience, the talk distills broader lessons for insect-scale autonomy, such as zero-copy, memory-efficient software abstractions,       latency-efficient sensing-to-control pipelines, and the software stack as a pillar of the overall system design.
     bio: >-
       Elia Cereda is a postdoctoral researcher at the Dalle Molle Institute for Artificial Intelligence (IDSIA, USI-SUPSI) in Lugano, Switzerland, where he received his Ph.D. in 2026. He researches robust AI for autonomous pocket-sized robotic platforms, spanning             performance-optimized software infrastructure, TinyML generalization under domain shift, and self-supervised on-device learning to bridge the gap between lab and real world. He authored more than 15 publications, including Best Paper Awards at IEEE ICCE'18 and          ACM EWSN'23 SPICES, and the first demonstrations of on-device learning aboard nano-drones. He was part of the winning team of the first "Nanocopter AI Challenge" at IMAV'22.
+
+  - name: "Gabriel Gattaux"
+    affiliation: "Aix-Marseille University and CNRS"
+    status: ""
+    photo: "/speakers/gattaux.jpg"
+    website: "https://hal.science/hal-05347280v2"
+    scholar: "https://scholar.google.com/citations?user=9ruLBb4AAAAJ"
+    linkedin: "https://www.linkedin.com/in/gabriel-gattaux"
 ---
 
 Listed below are the confirmed invited speakers for Insect Autonomy Workshop at IROS 2026. More speakers will be updated soon.
