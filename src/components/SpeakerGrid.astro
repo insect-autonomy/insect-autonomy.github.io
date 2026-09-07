@@ -17,14 +17,20 @@ const talkId = (name) =>
 
       return (
         <article class="speaker-card">
-          <img
-            class="avatar"
-            src={person.photo}
-            alt={person.name}
-            loading="lazy"
-            width="120"
-            height="120"
-          />
+          {person.photo ? (
+            <img
+              class="avatar"
+              src={person.photo}
+              alt={person.name}
+              loading="lazy"
+              width="120"
+              height="120"
+            />
+          ) : (
+            <div class="avatar avatar-placeholder" aria-label={person.name}>
+              {person.name.split(" ").map((part) => part[0]).join("")}
+            </div>
+          )}
 
           <div class="name">{person.name}</div>
           <div class="role">{person.affiliation}</div>
@@ -140,6 +146,16 @@ const talkId = (name) =>
     border: 1px solid var(--line);
     border-radius: 999px;
     object-fit: cover;
+  }
+
+  .avatar-placeholder {
+    display: grid;
+    place-items: center;
+    background: color-mix(in srgb, var(--link) 14%, var(--panel));
+    color: var(--link);
+    font-size: 29px;
+    font-weight: 750;
+    letter-spacing: .03em;
   }
 
   .name {

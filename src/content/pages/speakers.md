@@ -99,6 +99,29 @@ confirmed:
     scholar: "https://scholar.google.com/citations?user=SU0c5P0AAAAJ"
     linkedin: "https://www.linkedin.com/in/sarah-bergbreiter-a9323954"
 
+  - name: "Sawyer Fuller"
+    affiliation: "University of Washington"
+    status: ""
+    photo: "/speakers/fuller.jpg"
+    website: "https://faculty.washington.edu/minster/"
+    scholar: "https://scholar.google.com/citations?user=QHh8B98AAAAJ&hl=en&oi=ao"
+    linkedin: "https://www.linkedin.com/in/sawyer-fuller-830856"
+    talkTitle: "Embodied Intelligence in Insect Robotics"
+    abstract: >-
+      The theory of embodied intelligence holds that the way brains think is
+      inexorably tied to the body. Some portion of that intelligence comes from
+      the mechanics of the body itself. Size reductions made possible by advances
+      in microfabrication—from sensors to actuators to mechanisms—will allow
+      future autonomous systems to reduce in size to that of an insect. But like
+      in biology, insect-sized robots will never be able to match their larger
+      counterparts in intelligence: there is no room for big computers or
+      batteries. My research team creates robots less than a gram that address
+      this challenge by imbuing their bodies with smart physical design to
+      complement simple computation. Like insects, despite their small size, they
+      can sense and respond to their environment. Flying and hopping robots at
+      this scale could act as mobile sensors, helping detect gas leaks, spot early
+      forest fires, monitor crops, or track the spread of airborne diseases.
+
   - name: "Geoffrey Barrows"
     affiliation: "Centeye, Inc."
     status: ""
@@ -129,6 +152,17 @@ confirmed:
       insect-inspired vision dates to 1999, when he built and flew a neuromorphic
       optical flow sensor on a small air platform.
 
+  - name: "Chenxi Wu"
+    affiliation: "SynSense"
+    status: ""
+    website: "https://www.synsense.ai/"
+    scholar: "https://scholar.google.com/scholar?q=%22Chenxi+Wu%22+SynSense"
+    bio: >-
+      Chenxi Wu is Director of Industrial Applications at SynSense. Their work
+      focuses on low-power mixed-signal neuromorphic computing, including
+      hardware-aware training and deployment of spiking neural networks on the
+      DYNAP-SE2 processor.
+
   - name: "Elia Cereda"
     affiliation: "Dalle Molle Institute for Artificial Intelligence"
     status: ""
@@ -146,9 +180,40 @@ confirmed:
     affiliation: "Aix-Marseille University and CNRS"
     status: ""
     photo: "/speakers/gattaux.png"
-    website: "https://hal.science/hal-05347280v2"
+    website: "https://gaby-253.github.io/"
     scholar: "https://scholar.google.com/citations?user=9ruLBb4AAAAJ"
     linkedin: "https://www.linkedin.com/in/gabriel-gattaux"
+    talkTitle: "How Insect Brains Inspire Frugal Autonomous Navigation"
+    abstract: >-
+      Solitary foraging ants navigate complex environments with remarkably
+      limited sensory and neural resources, while autonomous robots often rely
+      on power-hungry sensors, large memories, and intensive computation. This
+      talk explores how insect vision, neural mechanisms, and behavior can
+      inspire frugal and robust robotic navigation. I will present bio-inspired
+      models of visual memory and decision-making implemented on ground and
+      aerial robots. Through visual homing and route following, I will show how
+      low-resolution vision, compact neural representations, and active
+      scanning enable reliable wayfinding with minimal sensing, memory, and
+      computation. Beyond engineering applications, these systems provide
+      embodied tools for investigating insect navigation and raise broader
+      questions about the possible functions of specific brain regions and
+      neuronal populations. This reciprocal approach illustrates how studying
+      tiny brains can advance autonomous robotics while deepening our
+      understanding of biological intelligence, particularly by asking whether
+      complex navigational behaviors require a cognitive map or might emerge
+      from simpler, compass-like representations.
+    bio: >-
+      Gabriel Gattaux is completing his PhD in biorobotics at Aix-Marseille
+      University (AMU-CNRS). His interdisciplinary training spans mechanical
+      engineering at the University of Lorraine, mechatronics at ENSIL-ENSCI,
+      University of Limoges, and computer science at Wrocław University of
+      Science and Technology. Bridging robotics, vision, control theory,
+      computational neuroscience, ethology, and neuromorphic engineering, his
+      research investigates how insects perceive, navigate, and make decisions,
+      particularly during wayfinding. He translates these biological insights
+      into frugal, robust robotic navigation systems that operate with minimal
+      sensing, memory, and computation. His recent work has been published in
+      Nature Communications and IEEE Robotics and Automation Letters.
 ---
 
 Listed below are the confirmed invited speakers for Insect Autonomy Workshop at IROS 2026. More speakers will be updated soon.

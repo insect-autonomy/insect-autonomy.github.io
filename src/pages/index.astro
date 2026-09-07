@@ -13,7 +13,7 @@ const data = entry.data;
 
   <aside class="deadline-notice" aria-label="Submission deadline extension">
     <strong>Submission deadline extended</strong>
-    <span>Paper and poster submissions are now due September 1, 2026, at 11:59 PM AoE.</span>
+    <span>Paper and poster submissions are now due September 15, 2026, at 11:59 PM AoE.</span>
     <a href="/cfp/">View submission details <span aria-hidden="true">→</span></a>
   </aside>
 
@@ -34,7 +34,7 @@ const data = entry.data;
         <p><strong>Venue:</strong> IROS 2026 (Pittsburgh)</p>
         <p><strong>Date:</strong> Oct 1, 2026 (Full Day Workshop)</p>
         <p><strong>Time:</strong> 8:30 AM — 5.30 PM</p>
-        <p><strong>Submission deadline:</strong> Sep 1, 2026, 11:59 PM AoE</p>
+        <p><strong>Submission deadline:</strong> Sep 15, 2026, 11:59 PM AoE</p>
         <a
           class="openreview-button"
           href="https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy"
@@ -56,16 +56,38 @@ const data = entry.data;
   <section class="sponsors-section" aria-labelledby="sponsors-heading">
     <p class="sponsors-label">Workshop Sponsor</p>
     <h2 id="sponsors-heading">Sponsors</h2>
-    <a
-      class="sponsor-card"
-      href="https://centeye.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Visit Centeye"
-    >
-      <img src="/sponsors/centeye.svg" alt="Centeye" width="260" height="105" />
-      <span>Advanced Vision Technology</span>
-    </a>
+    <div class="sponsor-list">
+      <a
+        class="sponsor-card"
+        href="https://centeye.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Centeye"
+      >
+        <img src="/sponsors/centeye.svg" alt="Centeye" width="260" height="105" />
+        <span>Advanced Vision Technology</span>
+      </a>
+      <a
+        class="sponsor-card"
+        href="https://www.synsense.ai/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit SynSense"
+      >
+        <img src="/sponsors/synsense.svg" alt="SynSense" width="260" height="105" />
+        <span>Neuromorphic Intelligence</span>
+      </a>
+      <a
+        class="sponsor-card sponsor-card--inivation"
+        href="https://inivation.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit iniVation"
+      >
+        <img src="/sponsors/inivation.png" alt="iniVation" width="260" height="105" />
+        <span>Event-Based Vision Systems</span>
+      </a>
+    </div>
     <p class="sponsor-contact">Interested in sponsoring the workshop? Contact <a href="mailto:chahat.singh@colorado.edu">chahat.singh@colorado.edu</a>.</p>
   </section>
 </PageLayout>
@@ -124,6 +146,13 @@ const data = entry.data;
     font-size: 24px;
   }
 
+  .sponsor-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
   .sponsor-card{
     display: inline-flex;
     flex-direction: column;
@@ -149,13 +178,18 @@ const data = entry.data;
   .sponsor-card img{
     display: block;
     width: min(220px, 100%);
-    height: auto;
+    height: 74px;
+    object-fit: contain;
   }
 
   .sponsor-card span{
     color: #3e52a4;
     font-size: 12px;
     font-weight: 700;
+  }
+
+  .sponsor-card--inivation img{
+    transform: scale(1.2);
   }
 
   .sponsor-contact{

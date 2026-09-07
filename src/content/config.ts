@@ -4,7 +4,7 @@ const person = z.object({
   name: z.string(),
   affiliation: z.string(),
   status: z.string(),
-  photo: z.string(),
+  photo: z.string().optional(),
   website: z.string().optional(),
   scholar: z.string().optional(),
   linkedin: z.string().optional(),
