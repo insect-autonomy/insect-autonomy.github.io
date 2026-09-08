@@ -871,6 +871,10 @@ tr:last-child td{
     font-weight: 680;
   }
 
+  .program-schedule td:nth-child(2) strong{
+    font-weight: inherit;
+  }
+
   .program-schedule td:nth-child(3){
     padding-top: 3px;
     padding-bottom: 10px;

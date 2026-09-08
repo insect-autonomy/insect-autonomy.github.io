@@ -1,12 +1,16 @@
 ---
 const { people = [] } = Astro.props;
 
-const talks = people.filter((person) => person.talkTitle && person.abstract);
+const talks = people.filter(
+  (person) => person.talkTitle && (person.abstract || person.bio),
+);
 const talkId = (name) =>
   `talk-${name
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "")}`;
+const roleClass = (status) =>
+  status ? `role-${status.toLowerCase().replace(/\s+/g, "-")}` : "";
 ---
 
 {talks.length > 0 && (
@@ -18,15 +22,21 @@ const talkId = (name) =>
 
     <div class="talk-list">
       {talks.map((person) => (
-        <article id={talkId(person.name)} class="talk-card">
+        <article id={talkId(person.name)} class={`talk-card ${roleClass(person.status)}`}>
           <div class="speaker-panel">
-            <img
-              src={person.photo}
-              alt={person.name}
-              loading="lazy"
-              width="128"
-              height="128"
-            />
+            {person.photo ? (
+              <img
+                src={person.photo}
+                alt={person.name}
+                loading="lazy"
+                width="128"
+                height="128"
+              />
+            ) : (
+              <div class="speaker-photo-placeholder" aria-label={person.name}>
+                {person.name.split(" ").map((part) => part[0]).join("")}
+              </div>
+            )}
             <div>
               <p class="label">Speaker</p>
               <h3>{person.name}</h3>
@@ -35,13 +45,15 @@ const talkId = (name) =>
           </div>
 
           <div class="talk-body">
-            <p class="label">Invited talk</p>
+            <p class="label role-label">{person.status || "Invited Talk"}</p>
             <h3 class="talk-title">{person.talkTitle}</h3>
 
-            <section class="copy-block" aria-labelledby={`${talkId(person.name)}-abstract`}>
-              <h4 id={`${talkId(person.name)}-abstract`}>Abstract</h4>
-              <p>{person.abstract}</p>
-            </section>
+            {person.abstract && (
+              <section class="copy-block" aria-labelledby={`${talkId(person.name)}-abstract`}>
+                <h4 id={`${talkId(person.name)}-abstract`}>Abstract</h4>
+                <p>{person.abstract}</p>
+              </section>
+            )}
 
             {person.abstractCredit && (
               <p class="abstract-credit"><em>{person.abstractCredit}</em></p>
@@ -86,6 +98,7 @@ const talkId = (name) =>
   }
 
   .talk-card {
+    --talk-accent: #a34858;
     position: relative;
     display: grid;
     grid-template-columns: 220px minmax(0, 1fr);
@@ -106,14 +119,23 @@ const talkId = (name) =>
     right: 24px;
     height: 3px;
     border-radius: 999px;
-    background: color-mix(in srgb, var(--link) 58%, transparent);
+    background: color-mix(in srgb, var(--talk-accent) 70%, transparent);
+  }
+
+  .talk-card.role-industry-talk {
+    --talk-accent: #4e5964;
+  }
+
+  .talk-card.role-rising-star-talk {
+    --talk-accent: #6d4c7d;
   }
 
   .speaker-panel {
     align-self: start;
   }
 
-  .speaker-panel img {
+  .speaker-panel img,
+  .speaker-photo-placeholder {
     display: block;
     width: 128px;
     height: 128px;
@@ -123,13 +145,39 @@ const talkId = (name) =>
     object-fit: cover;
   }
 
+  .speaker-photo-placeholder {
+    display: grid;
+    place-items: center;
+    background: color-mix(in srgb, var(--talk-accent) 12%, var(--panel));
+    color: var(--talk-accent);
+    font-size: 30px;
+    font-weight: 750;
+    letter-spacing: .03em;
+  }
+
   .label {
     margin: 0 0 6px;
-    color: var(--link);
+    color: var(--muted);
     font-size: 11px;
     font-weight: 750;
     letter-spacing: .1em;
     text-transform: uppercase;
+  }
+
+  .role-label {
+    color: var(--talk-accent);
+  }
+
+  :global(:root[data-theme="dark"]) .talk-card {
+    --talk-accent: #e3a0ab;
+  }
+
+  :global(:root[data-theme="dark"]) .talk-card.role-industry-talk {
+    --talk-accent: #bac5cf;
+  }
+
+  :global(:root[data-theme="dark"]) .talk-card.role-rising-star-talk {
+    --talk-accent: #c8a7d8;
   }
 
   .speaker-panel h3 {
@@ -206,7 +254,8 @@ const talkId = (name) =>
       align-items: center;
     }
 
-    .speaker-panel img {
+    .speaker-panel img,
+    .speaker-photo-placeholder {
       width: 88px;
       height: 88px;
       margin: 0;

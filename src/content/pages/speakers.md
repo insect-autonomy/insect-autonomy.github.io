@@ -1,12 +1,12 @@
 ---
 title: "Speakers"
 description: "Invited speakers and status"
-updated: "2026-08-26"
+updated: "2026-09-08"
 
 confirmed:
   - name: "Yiannis Aloimonos"
-    affiliation: "University of Maryland, College Park"
-    status: ""
+    affiliation: "University of Maryland"
+    status: "Keynote"
     photo: "/speakers/aloimonos.jpg"
     website: "https://www.prg.cs.umd.edu/"
     scholar: "https://scholar.google.com/citations?user=7QmEsOwAAAAJ"
@@ -52,7 +52,7 @@ confirmed:
 
   - name: "Vijay Janapa Reddi"
     affiliation: "Harvard University"
-    status: ""
+    status: "Keynote"
     photo: "/speakers/reddi.jpg"
     website: "https://vijay.seas.harvard.edu/"
     scholar: "https://scholar.google.com/citations?hl=en&user=gy4UVGcAAAAJ"
@@ -60,7 +60,7 @@ confirmed:
 
   - name: "Frances Chance"
     affiliation: "Sandia National Laboratories"
-    status: ""
+    status: "Keynote"
     photo: "/speakers/chance.jpg"
     website: "https://www.sandia.gov/ccr/staff/frances-s-chance/"
     scholar: "https://scholar.google.com/scholar?hl=en&q=%22Frances+S.+Chance%22"
@@ -93,7 +93,7 @@ confirmed:
 
   - name: "Sarah Bergbreiter"
     affiliation: "Carnegie Mellon University"
-    status: ""
+    status: "Keynote"
     photo: "/speakers/bergbreiter.png"
     website: "https://engineering.cmu.edu/directory/bios/bergbreiter-sarah.html"
     scholar: "https://scholar.google.com/citations?user=SU0c5P0AAAAJ"
@@ -101,7 +101,7 @@ confirmed:
 
   - name: "Sawyer Fuller"
     affiliation: "University of Washington"
-    status: ""
+    status: "Keynote"
     photo: "/speakers/fuller.jpg"
     website: "https://faculty.washington.edu/minster/"
     scholar: "https://scholar.google.com/citations?user=QHh8B98AAAAJ&hl=en&oi=ao"
@@ -124,7 +124,7 @@ confirmed:
 
   - name: "Geoffrey Barrows"
     affiliation: "Centeye, Inc."
-    status: ""
+    status: "Industry Talk"
     photo: "/speakers/barrows.png"
     website: "https://www.centeye.com/"
     scholar: "https://scholar.google.com/scholar?q=%22Geoffrey+L.+Barrows%22"
@@ -154,7 +154,7 @@ confirmed:
 
   - name: "Chenxi Wu"
     affiliation: "SynSense"
-    status: ""
+    status: "Industry Talk"
     website: "https://www.synsense.ai/"
     scholar: "https://scholar.google.com/scholar?q=%22Chenxi+Wu%22+SynSense"
     talkTitle: "Seeing at mW, Reacting at ms: The Speck™ DVS-SNN SoC"
@@ -166,7 +166,7 @@ confirmed:
 
   - name: "Elia Cereda"
     affiliation: "Dalle Molle Institute for Artificial Intelligence"
-    status: ""
+    status: "Rising Star Talk"
     photo: "/speakers/cereda.png"
     website: "https://idsia-robotics.github.io/nanorobotics/"
     scholar: "https://scholar.google.ch/citations?user=GPJziQsAAAAJ"
@@ -179,7 +179,7 @@ confirmed:
 
   - name: "Gabriel Gattaux"
     affiliation: "Aix-Marseille University and CNRS"
-    status: ""
+    status: "Rising Star Talk"
     photo: "/speakers/gattaux.png"
     website: "https://gaby-253.github.io/"
     scholar: "https://scholar.google.com/citations?user=9ruLBb4AAAAJ"

@@ -9,6 +9,7 @@ if (!entry) throw new Error("Missing content: src/content/pages/speakers.md");
 
 const { Content } = await entry.render();
 const data = entry.data;
+const confirmed = data.confirmed ?? [];
 ---
 
 <PageLayout title={data.title} description={data.description}>
@@ -17,11 +18,11 @@ const data = entry.data;
       <Content />
     </div>
 
-    {data.confirmed && data.confirmed.length > 0 && (
-      <SpeakerGrid title="Invited Speakers" people={data.confirmed} />
+    {confirmed.length > 0 && (
+      <SpeakerGrid title="Invited Speakers" people={confirmed} />
     )}
 
-    <InvitedTalks people={data.confirmed ?? []} />
+    <InvitedTalks people={confirmed} />
 
     {data.pending && data.pending.length > 0 && (
       <SpeakerGrid title="Invited / Pending" people={data.pending} />
