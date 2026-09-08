@@ -157,6 +157,7 @@ confirmed:
     status: ""
     website: "https://www.synsense.ai/"
     scholar: "https://scholar.google.com/scholar?q=%22Chenxi+Wu%22+SynSense"
+    talkTitle: "Seeing at mW, Reacting at ms: The Speck™ DVS-SNN SoC"
     bio: >-
       Chenxi Wu is Director of Industrial Applications at SynSense. Their work
       focuses on low-power mixed-signal neuromorphic computing, including
