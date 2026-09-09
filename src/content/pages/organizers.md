@@ -16,7 +16,7 @@ organizers:
   - name: "Kaushik Jayaram"
     affiliation: "Imperial College London"
     photo: "kaushik.jpg"
-    # website: "https://kaushikjayaram.com/"
+    website: "https://profiles.imperial.ac.uk/k.jayaram"
     labWebsite: "https://jayaramlab.com/"
     scholar: "https://scholar.google.com/citations?hl=en&user=3CPfGbsAAAAJ"
     linkedin: "https://www.linkedin.com/in/kaushikj1729"
