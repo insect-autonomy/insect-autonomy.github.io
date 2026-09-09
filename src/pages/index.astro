@@ -89,6 +89,59 @@ const data = entry.data;
       </a>
     </div>
     <p class="sponsor-contact">Interested in sponsoring the workshop? Contact <a href="mailto:chahat.singh@colorado.edu">chahat.singh@colorado.edu</a>.</p>
+
+    <div class="institution-affiliations" aria-labelledby="institutions-heading">
+      <p class="institution-label" id="institutions-heading">Organized by researchers from</p>
+      <div class="institution-list">
+        <a href="https://www.colorado.edu/" target="_blank" rel="noopener noreferrer" aria-label="University of Colorado Boulder">
+          <img src="/institutions/cu-boulder-centered.png" alt="University of Colorado Boulder" width="1247" height="709" />
+        </a>
+        <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer" aria-label="Imperial College London">
+          <img src="/institutions/imperial.png" alt="Imperial College London" width="12900" height="1417" />
+        </a>
+        <a href="https://www.tudelft.nl/en/" target="_blank" rel="noopener noreferrer" aria-label="TU Delft">
+          <img src="/institutions/tu-delft.svg" alt="TU Delft" />
+        </a>
+        <a href="https://www.umd.edu/" target="_blank" rel="noopener noreferrer" aria-label="University of Maryland">
+          <img src="/institutions/maryland-primary.jpg" alt="University of Maryland" width="1801" height="601" />
+        </a>
+      </div>
+      <a class="organizers-link" href="/organizers/">Meet the organizers <span aria-hidden="true">→</span></a>
+
+      <div class="speaker-affiliations" aria-labelledby="speaker-affiliations-heading">
+        <p class="speaker-affiliations-label" id="speaker-affiliations-heading">Featuring speakers from</p>
+        <div class="speaker-affiliation-list">
+          <a href="https://www.harvard.edu/" target="_blank" rel="noopener noreferrer" aria-label="Harvard University" title="Harvard University">
+            <span class="speaker-logo-frame"><img class="speaker-logo speaker-logo--seal" src="/institutions/speakers/harvard.png" alt="" width="512" height="512" /></span>
+            <span class="speaker-affiliation-name">Harvard</span>
+          </a>
+          <a href="https://www.sandia.gov/" target="_blank" rel="noopener noreferrer" aria-label="Sandia National Laboratories" title="Sandia National Laboratories">
+            <span class="speaker-logo-frame"><img src="/institutions/speakers/sandia.svg" alt="" /></span>
+            <span class="speaker-affiliation-name">Sandia National Labs</span>
+          </a>
+          <a href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Carnegie Mellon University" title="Carnegie Mellon University">
+            <span class="speaker-logo-frame"><img class="speaker-logo speaker-logo--square" src="/institutions/speakers/cmu.png" alt="" width="900" height="900" /></span>
+            <span class="speaker-affiliation-name">Carnegie Mellon</span>
+          </a>
+          <a href="https://www.washington.edu/" target="_blank" rel="noopener noreferrer" aria-label="University of Washington" title="University of Washington">
+            <span class="speaker-logo-frame"><img class="speaker-logo speaker-logo--wide" src="/institutions/speakers/washington.png" alt="" width="1056" height="216" /></span>
+            <span class="speaker-affiliation-name">University of Washington</span>
+          </a>
+          <a href="https://idsia.ch/" target="_blank" rel="noopener noreferrer" aria-label="Dalle Molle Institute for Artificial Intelligence" title="Dalle Molle Institute for Artificial Intelligence">
+            <span class="speaker-logo-frame"><img class="speaker-logo speaker-logo--seal" src="/institutions/speakers/idsia.png" alt="" width="460" height="460" /></span>
+            <span class="speaker-affiliation-name">Dalle Molle Institute</span>
+          </a>
+          <a class="speaker-affiliation--paired" href="https://www.univ-amu.fr/" target="_blank" rel="noopener noreferrer" aria-label="Aix-Marseille University and CNRS" title="Aix-Marseille University and CNRS">
+            <span class="speaker-logo-frame speaker-logo-frame--paired">
+              <img src="/institutions/speakers/amu.svg" alt="" />
+              <img src="/institutions/speakers/cnrs.svg" alt="" />
+            </span>
+            <span class="speaker-affiliation-name">Aix-Marseille / CNRS</span>
+          </a>
+        </div>
+        <a class="speakers-link" href="/speakers/">View all speakers <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
   </section>
 </PageLayout>
 
@@ -198,6 +251,180 @@ const data = entry.data;
     font-size: 13px;
   }
 
+  .institution-affiliations{
+    margin: 30px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  .institution-label{
+    margin: 0 0 14px;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .institution-list{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    gap: 12px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  .institution-list a{
+    min-width: 0;
+    min-height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 15px;
+    border: 1px solid color-mix(in srgb, var(--muted) 22%, var(--line));
+    border-radius: 12px;
+    background: #fff;
+    text-decoration: none;
+    transition: border-color 150ms ease, transform 150ms ease;
+  }
+
+  .institution-list a:hover{
+    border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+    transform: translateY(-1px);
+  }
+
+  .institution-list img{
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    height: 44px;
+    object-fit: contain;
+  }
+
+  .institution-list a:nth-child(1) img{
+    max-width: 160px;
+    height: 90px;
+  }
+
+  .institution-list a:nth-child(2) img{
+    max-width: 145px;
+    height: 38px;
+  }
+
+  .institution-list a:nth-child(3) img{
+    max-width: 125px;
+    height: 48px;
+    position: relative;
+    top: -4px;
+  }
+
+  .institution-list a:nth-child(4) img{
+    max-width: 175px;
+    height: 50px;
+  }
+
+  .organizers-link{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .speaker-affiliations{
+    max-width: 940px;
+    margin: 24px auto 0;
+    padding-top: 21px;
+    border-top: 1px solid var(--line);
+  }
+
+  .speaker-affiliations-label{
+    margin: 0 0 12px;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .speaker-affiliation-list{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .speaker-affiliation-list a{
+    min-width: 0;
+    min-height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 10px 7px;
+    border: 1px solid color-mix(in srgb, var(--muted) 22%, var(--line));
+    border-radius: 10px;
+    background: #fff;
+    transition: border-color 150ms ease, transform 150ms ease;
+  }
+
+  .speaker-affiliation-list a:hover{
+    border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+    transform: translateY(-1px);
+  }
+
+  .speaker-affiliation-list img{
+    display: block;
+    width: auto;
+    max-width: 108px;
+    height: auto;
+    max-height: 36px;
+    object-fit: contain;
+  }
+
+  .speaker-logo-frame{
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .speaker-affiliation-name{
+    color: #4f4b44;
+    font-size: 10.5px;
+    font-weight: 650;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .speaker-affiliation-list .speaker-logo--seal,
+  .speaker-affiliation-list .speaker-logo--square{
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .speaker-affiliation-list .speaker-logo--wide{
+    max-width: 116px;
+    max-height: 32px;
+  }
+
+  .speaker-affiliation-list .speaker-logo-frame--paired{
+    gap: 8px;
+  }
+
+  .speaker-affiliation-list .speaker-logo-frame--paired img:first-child{
+    max-width: 74px;
+    max-height: 34px;
+  }
+
+  .speaker-affiliation-list .speaker-logo-frame--paired img:last-child{
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .speakers-link{
+    display: inline-block;
+    margin-top: 11px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
   .focus-grid{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -281,6 +508,10 @@ const data = entry.data;
   }
 
   @media (max-width: 900px){
+    .speaker-affiliation-list{
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
     .focus-grid{
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -313,6 +544,42 @@ const data = entry.data;
     .sponsor-card{
       min-width: 0;
       padding: 12px 20px 10px;
+    }
+
+    .institution-list{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .institution-list a{
+      min-height: 96px;
+      padding: 10px 12px;
+    }
+
+    .institution-list img,
+    .institution-list a:nth-child(2) img{
+      max-width: 135px;
+      height: 40px;
+    }
+
+    .institution-list a:nth-child(1) img{
+      max-width: 145px;
+      height: 82px;
+    }
+
+    .institution-list a:nth-child(3) img{
+      max-width: 112px;
+      height: 43px;
+      top: -3px;
+    }
+
+    .institution-list a:nth-child(4) img{
+      max-width: 150px;
+      height: 43px;
+    }
+
+    .speaker-affiliation-list{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .focus-grid{
