@@ -1,7 +1,7 @@
 ---
 title: "Speakers"
 description: "Invited speakers and status"
-updated: "2026-09-08"
+updated: "2026-09-12"
 
 confirmed:
   - name: "Yiannis Aloimonos"
@@ -98,6 +98,33 @@ confirmed:
     website: "https://engineering.cmu.edu/directory/bios/bergbreiter-sarah.html"
     scholar: "https://scholar.google.com/citations?user=SU0c5P0AAAAJ"
     linkedin: "https://www.linkedin.com/in/sarah-bergbreiter-a9323954"
+    talkTitle: "Event-based mechanosensing for insect-scale autonomy"
+    abstract: >-
+      Insects use neural mechanosensing to process information efficiently for
+      agile, robust flight. We explore two types of mechanosensors for disturbance
+      detection in flight: strain and flow. Inspired by neurons embedded in insect
+      wings that efficiently encode complex strain patterns through nonlinear
+      filtering, we designed and fabricated strain-sensitive "switches" directly
+      on flexible wings. These switches open and close at a designated strain
+      threshold, and the timing of their closures allows us to detect and classify
+      disturbances and body rotations (sinusoidal yaw, 4 rad/s amplitude). We also
+      explore sensor placement on the wing computationally and experimentally.
+      Motivated by the many hairs on insect wings and bodies, we extended the same
+      switch-based approach to flow sensing: sub-millimeter sensors respond to
+      airflow reversal (useful for stall detection) and velocities as low as 0.5 m/s.
+    bio: >-
+      Sarah Bergbreiter is the Dan and Karen Swanson Endowed Professor of Mechanical
+      Engineering at Carnegie Mellon University, where she also serves as Associate
+      Head for Strategic Initiatives. Her research integrates robotics, MEMS,
+      materials, and manufacturing to create new sensing, actuation, and locomotion
+      technologies for small-scale robotic systems. Prof. Bergbreiter's honors
+      include the DARPA Young Faculty Award, NSF CAREER Award, and Presidential Early
+      Career Award for Scientists and Engineers (PECASE). She and her fabulous
+      current and former students have also received several Best Paper awards at
+      ICRA, IROS, and the Hilton Head Workshop. She is a Fellow of ASME and previously
+      served as Vice Chair of DARPA's Microsystems Exploratory Council. Outside of
+      academia, she enjoys spending time with her husband and two daughters, running
+      or biking outside rather slowly, and the rare game of water polo.
 
   - name: "Sawyer Fuller"
     affiliation: "University of Washington"
