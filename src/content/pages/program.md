@@ -35,7 +35,7 @@ updated: "2026-09-14"
     <tr><td>10:50–11:40</td><td>Rising Star Talks</td><td><a href="/speakers#talk-elia-cereda">Elia Cereda</a> and <a href="/speakers#talk-gabriel-gattaux">Gabriel Gattaux</a></td></tr>
     <tr class="session-b"><td>11:40–12:15</td><td><strong>Keynote 3</strong>: Sawyer Fuller</td><td><a href="/speakers#talk-sawyer-fuller">Embodied Intelligence in Insect Robotics</a></td></tr>
     <tr><td>12:15–13:30</td><td>Lunch + Early-Career Research and Career Discussion</td><td>Research ideas, career guidance, and networking</td></tr>
-    <tr class="session-b"><td>13:30–14:05</td><td><strong>Keynote 4</strong>: Sarah Bergbreiter</td><td>Event-based mechanosensing for insect-scale autonomy</td></tr>
+    <tr class="session-b"><td>13:30–14:05</td><td><strong>Keynote 4</strong>: Sarah Bergbreiter</td><td><a href="/speakers#talk-sarah-bergbreiter">Event-based mechanosensing for insect-scale autonomy</a></td></tr>
     <tr class="session-b"><td>14:05–14:30</td><td><strong>Industry Talk 1</strong>: Geoffrey Barrows (Centeye)</td><td><a href="/speakers#talk-geoffrey-barrows">What can you do with a few thousand pixels?</a></td></tr>
     <tr class="session-c"><td>14:30–15:05</td><td><strong>Keynote 5</strong>: Vijay Janapa Reddi</td><td>Title TBD</td></tr>
     <tr class="session-c"><td>15:05–15:35</td><td>Contributed Talks</td><td>Combined accepted papers for Sessions B and C</td></tr>
