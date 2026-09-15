@@ -1,7 +1,7 @@
 ---
 title: "Speakers"
 description: "Invited speakers and status"
-updated: "2026-09-12"
+updated: "2026-09-15"
 
 confirmed:
   - name: "Yiannis Aloimonos"
@@ -148,6 +148,18 @@ confirmed:
       can sense and respond to their environment. Flying and hopping robots at
       this scale could act as mobile sensors, helping detect gas leaks, spot early
       forest fires, monitor crops, or track the spread of airborne diseases.
+    bio: >-
+      Sawyer Fuller creates biologically-inspired sensors, control systems, and
+      mechanical designs targeted at insect-sized air and ground vehicles, and
+      investigates the flight systems of aerial insects. He completed his Ph.D.
+      in Biological Engineering at the California Institute of Technology and
+      B.S. and M.S. degrees in Mechanical Engineering at the Massachusetts
+      Institute of Technology, and postdoctoral training at Harvard. In addition
+      to his work in insect flight control, he also developed a frog-hopping robot
+      at the NASA Jet Propulsion Laboratory and invented an ink-jet printer capable
+      of fabricating millimeter-scale 3D metal machines at the MIT Media Lab. His
+      work at the intersection of robotics and biology has appeared in journals
+      such as Science and Proceedings of the National Academy of Sciences.
 
   - name: "Geoffrey Barrows"
     affiliation: "Centeye, Inc."
