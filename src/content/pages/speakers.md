@@ -1,7 +1,7 @@
 ---
 title: "Speakers"
 description: "Invited speakers and status"
-updated: "2026-09-15"
+updated: "2026-09-16"
 
 confirmed:
   - name: "Yiannis Aloimonos"
@@ -194,14 +194,40 @@ confirmed:
   - name: "Chenxi Wu"
     affiliation: "SynSense"
     status: "Industry Talk"
+    photo: "/speakers/chenxi-wu.png"
     website: "https://www.synsense.ai/"
     scholar: "https://scholar.google.com/scholar?q=%22Chenxi+Wu%22+SynSense"
     talkTitle: "Seeing at mW, Reacting at ms: The Speck™ DVS-SNN SoC"
+    abstract: >-
+      Achieving simultaneous low power and low latency is critical for
+      autonomous insect-scale systems. Dynamic Vision Sensor (DVS) itself
+      achieves sub-mW idle power and sub-ms latency thanks to asynchronous
+      pixel-level parallelism, but most high-performance algorithms running on
+      synchronous processors cause orders-of-magnitudes higher power and
+      latency overhead. Also asynchronous Spiking Neural Network (SNN) seems
+      to be the best alternative, yet its hardware availability and algorithm
+      development remain problematic. Speck™, the first commercial
+      System-on-Chip (SoC) with integrated asynchronous DVS and convolutional
+      SNN, offers such a platform, and this talk aims to tackle the second
+      problem: what algorithms could reach real system-level mW-ms. We propose
+      a fully asynchronous, parallel and timestamp-agnostic framework that
+      exploits only the relative local spatio-temporal sequences of
+      events/spikes. Two exemplar networks are implemented on Speck™: (1)
+      flash detection that localizes a single-pulse flash of a point light
+      source and (2) motion detection that filters out objects moving in any
+      given direction. System-level results show end-to-end latency at ms
+      level and average power at mW level. These two examples not only lead to
+      useful applications themselves, but their implementation methodologies
+      can also inspire further research.
     bio: >-
-      Chenxi Wu is Director of Industrial Applications at SynSense. Their work
-      focuses on low-power mixed-signal neuromorphic computing, including
-      hardware-aware training and deployment of spiking neural networks on the
-      DYNAP-SE2 processor.
+      Chenxi Wu got his MSc and PhD in Neuroscience at the Institute of
+      Neuroinformatics (INI) in Zurich, supervised by Prof. G. Indiveri,
+      focusing on mixed-signal neuromorphic processor and dynamical systems.
+      He joined SynSense in 2023, and since then worked on neuromorphic
+      sensing and computing technologies. Now he is the director of the
+      industrial applications team at SynSense. They mainly use Speck™, a
+      DVS-SNN SoC, to build ultra-low power and ultra-low latency systems for
+      real-life scenarios.
 
   - name: "Elia Cereda"
     affiliation: "Dalle Molle Institute for Artificial Intelligence"
