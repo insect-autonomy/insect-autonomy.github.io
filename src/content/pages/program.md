@@ -57,7 +57,7 @@ updated: "2026-09-27"
     </ol></td></tr>
     <tr><td>15:40–16:20</td><td>Coffee Break + Poster Session</td><td>Accepted papers/posters outside the conference room</td></tr>
     <tr><td>16:20–16:30</td><td>Break</td><td></td></tr>
-    <tr><td>16:30–17:15</td><td>Panel Discussion: Enabling Autonomy at Insect Scale</td><td><strong>Panelists:</strong> Frances Chance, Yiannis Aloimonos, Geoffrey Barrows, and Sean Humbert.<br /><br />Roadmap discussion and audience Q&amp;A.</td></tr>
+    <tr><td>16:30–17:15</td><td><strong>Panel Discussion</strong>: Enabling Autonomy at Insect Scale</td><td><strong>Panelists:</strong> Frances Chance, Yiannis Aloimonos, Geoffrey Barrows, and Sean Humbert.<br />Roadmap discussion and audience Q&amp;A.</td></tr>
     <tr><td>17:15–17:25</td><td>Awards and Community Perspective Paper</td><td>Awards and post-workshop next steps</td></tr>
     <tr><td>17:25–17:35</td><td>Closing remarks</td><td>Summary and acknowledgments</td></tr>
   </tbody>
