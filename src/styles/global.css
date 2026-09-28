@@ -475,6 +475,10 @@ a:hover{
   color: var(--text);
 }
 
+.schedule-details .room-location{
+  font-size: 1.15em;
+}
+
 /* Tables */
 
 table{
@@ -516,6 +520,25 @@ tr:last-child td{
 
 .program-schedule{
   table-layout: fixed;
+}
+
+.program-schedule .paper-titles{
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.program-schedule .paper-titles li{
+  margin: 0 0 0.45rem;
+}
+
+.program-schedule .paper-titles li:last-child{
+  margin-bottom: 0;
+}
+
+.program-schedule tr[id^="contributed-talks-"]{
+  scroll-margin-top: 6rem;
 }
 
 .program-schedule th:first-child{

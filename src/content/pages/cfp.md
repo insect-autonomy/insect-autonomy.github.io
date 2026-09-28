@@ -8,8 +8,10 @@ updated: "2026-08-23"
 ## IROS 2026 Workshop on Insect-Scale Autonomy
 
 ### Workshop Date: October 1, 2026
-### Submission Deadline: Sep 15, 2026
-### [Submit on OpenReview](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
+### Submissions are closed
+The submission deadline was September 15, 2026. The call below is retained for reference.
+
+### [See our program](/program/)
 ---
 
 We invite submissions to the IROS workshop “Insect-Scale Autonomy.”
@@ -77,9 +79,9 @@ Submissions do **NOT** need to be limited to literal insect-sized robots. We als
 ---
 
 # Submission Instructions
-Submissions should be uploaded as PDF files through the workshop submission site:
+Submissions are now closed. Existing submissions remain available on OpenReview:
 
-**Submission link**: [OpenReview](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
+**View submissions**: [OpenReview](https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/Insect-Scale_Autonomy)
 
 Paper Track submissions should use the IEEE conference paper format:
 - LaTeX template: [ieeeconf.zip](https://ras.papercept.net/conferences/support/files/ieeeconf.zip) (select US Letter paper in root.tex)
