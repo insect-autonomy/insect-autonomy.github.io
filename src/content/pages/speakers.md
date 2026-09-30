@@ -12,6 +12,9 @@ confirmed:
     scholar: "https://scholar.google.com/citations?user=7QmEsOwAAAAJ"
     linkedin: "https://www.linkedin.com/in/yiannis-aloimonos-6374865"
     talkTitle: "Purposive Memory and Purposive Perception: A key to insect-scale autonomy"
+    bioLinks:
+      - label: "University of Maryland"
+        url: "https://umd.edu/"
     abstract: >-
       Robots are built to act in the real world; at the insect scale, power,
       memory, sensing, and computation become severe constraints. We propose a
@@ -50,13 +53,23 @@ confirmed:
       He received the Presidential Young Investigator Award from President Bush and
       the Bodossaki Prize in Artificial Intelligence. He is an IEEE Fellow.
 
-  - name: "Vijay Janapa Reddi"
-    affiliation: "Harvard University"
+  - name: "Sean Humbert"
+    affiliation: "University of Colorado Boulder"
     status: "Keynote"
-    photo: "/speakers/reddi.jpg"
-    website: "https://vijay.seas.harvard.edu/"
-    scholar: "https://scholar.google.com/citations?hl=en&user=gy4UVGcAAAAJ"
-    linkedin: "https://www.linkedin.com/in/vijay-janapa-reddi-63a6a173"
+    photo: "/organizers/sean.jpg"
+    website: "https://www.colorado.edu/engineering/j-sean-humbert"
+    scholar: "https://scholar.google.com/citations?user=tgXkh_UAAAAJ&hl=en"
+    linkedin: "https://www.linkedin.com/in/j-sean-humbert-84a487b0"
+    talkTitle: "Sensing What Matters: Embodied Control for Agile Autonomous Systems"
+    bioLinks:
+      - label: "Robotics Graduate Program"
+        url: "https://www.colorado.edu/program/robotics/"
+      - label: "Bio-Inspired Perception and Robotics Laboratory"
+        url: "http://www.boulderbprl.com/"
+    abstract: >-
+      Our team’s field experience in the DARPA Subterranean Challenge revealed a central bottleneck in autonomous exploration: physical agility and robustness in uncertain, cluttered environments. In contrast, natural organisms negotiate complex terrain with remarkable ease—a lizard scrambling across rocks or a bird swerving through dense vegetation. Why can’t our robotic systems match this performance? Is the advantage better hardware, or a fundamentally different sensing and control architecture? This talk explores a shift from model-centric autonomy toward proprioceptive sensing and control inspired by biology. Rather than relying on increasingly detailed dynamic models, we leverage the structure of the platform itself as a sensing substrate. Distributed mechanosensing embedded in the airframe provides low-latency access to dynamically significant quantities without numerical differentiation or heavy filtering. By grounding control in direct physical observability rather than complex modeling, we move closer to the principles underlying biological agility in uncertain environments.
+    bio: >-
+      Dr. Sean Humbert is the Denver Business Challenge Professor in the Department of Mechanical Engineering and the founding Director of the Robotics Graduate Program at the University of Colorado Boulder. He holds a BS degree in Mechanical Engineering from the University of California Davis along with MS and PhD degrees in Mechanical Engineering from Caltech. As PI of the Bio-Inspired Perception and Robotics Laboratory, his group applies control- and information-theoretic tools to distill perception and reduction principles in small animals such as insects, providing insight into the biology and resulting in novel, robust, and computationally efficient solutions for engineered systems. Prof. Humbert has served as a member of the Board for Army Science and Technology (BAST), as a core member of the Board on Army RDT&E, Systems Acquisition and Logistics (BARSL), as a member of the DARPA MTO Microsystems Exploratory Council (MEC), and is an AIAA Associate Fellow. He is the recipient of the AIAA National Capital Section Hal Andrews Young Scientist/Engineer Award and an ARO Young Investigator Award.
 
   - name: "Frances Chance"
     affiliation: "Sandia National Laboratories"
@@ -66,6 +79,9 @@ confirmed:
     scholar: "https://scholar.google.com/scholar?hl=en&q=%22Frances+S.+Chance%22"
     linkedin: "https://www.linkedin.com/in/frances-chance-7528a266"
     talkTitle: "The Computer Bug You Want: Insect-Inspired Neuromorphic Primitives for Energy-Efficient Computation"
+    bioLinks:
+      - label: "Sandia National Laboratories"
+        url: "https://www.sandia.gov/"
     abstract: >-
       Animals excel at a range of essential behaviors, for example hunting or
       foraging, that require fast calculations under tight energy constraints.
@@ -99,6 +115,9 @@ confirmed:
     scholar: "https://scholar.google.com/citations?user=SU0c5P0AAAAJ"
     linkedin: "https://www.linkedin.com/in/sarah-bergbreiter-a9323954"
     talkTitle: "Event-based mechanosensing for insect-scale autonomy"
+    bioLinks:
+      - label: "Carnegie Mellon University"
+        url: "https://www.cmu.edu/"
     abstract: >-
       Insects use neural mechanosensing to process information efficiently for
       agile, robust flight. We explore two types of mechanosensors for disturbance
@@ -134,6 +153,9 @@ confirmed:
     scholar: "https://scholar.google.com/citations?user=QHh8B98AAAAJ&hl=en&oi=ao"
     linkedin: "https://www.linkedin.com/in/sawyer-fuller-830856"
     talkTitle: "Embodied Intelligence in Insect Robotics"
+    bioLinks:
+      - label: "Sawyer Fuller"
+        url: "https://faculty.washington.edu/minster/"
     abstract: >-
       The theory of embodied intelligence holds that the way brains think is
       inexorably tied to the body. Some portion of that intelligence comes from
@@ -169,6 +191,9 @@ confirmed:
     scholar: "https://scholar.google.com/scholar?q=%22Geoffrey+L.+Barrows%22"
     linkedin: "https://www.linkedin.com/in/geoffrey-l-barrows"
     talkTitle: "What can you do with a few thousand pixels?"
+    bioLinks:
+      - label: "Centeye, Inc."
+        url: "https://centeye.com/"
     abstract: >-
       The costliest element in the SWaP budget of a small robotic vision system is
       generally not the image sensor but the processing behind it. In earlier work
@@ -199,6 +224,9 @@ confirmed:
     scholar: "https://scholar.google.ch/citations?user=GPJziQsAAAAJ"
     linkedin: "https://www.linkedin.com/in/elia-cereda-65093bb1"
     talkTitle: "Closing the Loop at Insect Scale: Lessons from Performance-optimized Software Architectures for Nano-UAVs"
+    bioLinks:
+      - label: "Dalle Molle Institute for Artificial Intelligence"
+        url: "https://idsia.usi-supsi.ch/"
     abstract: >-
       Insect-scale robots must rely on ultra-low power resource-constrained MCUs for perception-to-action onboard intelligence. At the nano-UAV scale, i.e., 10 cm, tens of grams, and sub-100mW perception, much research concentrated on TinyML models, controllers, and          bio-inspired algorithms, while treating the underlying software infrastructure as an implementation detail. This choice is costly: across state-of-the-art nano-UAV systems, closed-loop throughput falls 16–92% short of inference workloads in isolation.  Our in-          field experiments show the lost throughput directly degrades closed-loop performance, e.g., up to 30% higher position error and mission success dropping from 100% to 40%. This talk builds on NanoCockpit, our open-source performance-optimized application framework       for the 27-gram Crazyflie that recovers the ideal throughput, now being integrated into the platform's official software. From this experience, the talk distills broader lessons for insect-scale autonomy, such as zero-copy, memory-efficient software abstractions,       latency-efficient sensing-to-control pipelines, and the software stack as a pillar of the overall system design.
     bio: >-
@@ -212,6 +240,9 @@ confirmed:
     scholar: "https://scholar.google.com/citations?user=9ruLBb4AAAAJ"
     linkedin: "https://www.linkedin.com/in/gabriel-gattaux"
     talkTitle: "How Insect Brains Inspire Frugal Autonomous Navigation"
+    bioLinks:
+      - label: "Aix-Marseille University"
+        url: "https://www.univ-amu.fr/"
     abstract: >-
       Solitary foraging ants navigate complex environments with remarkably
       limited sensory and neural resources, while autonomous robots often rely
@@ -244,4 +275,4 @@ confirmed:
       Nature Communications and IEEE Robotics and Automation Letters.
 ---
 
-Listed below are the confirmed invited speakers for Insect Autonomy Workshop at IROS 2026. More speakers will be updated soon.
+Meet the invited speakers for the Insect-scale Autonomy Workshop at IROS 2026.

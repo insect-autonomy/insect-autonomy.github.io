@@ -18,8 +18,7 @@ updated: "2026-09-27"
 
 <div class="schedule-details">
   <strong>October 1, 2026 · Pittsburgh local time (ET)</strong><br />
-  <span class="room-location">Room location: Room 334</span><br />
-  <span>Schedule subject to change</span>
+  <span class="room-location">Room location: Room 334</span>
 </div>
 
 <table class="program-schedule">
@@ -46,7 +45,7 @@ updated: "2026-09-27"
     <tr><td>12:15–13:30</td><td>Lunch + Early-Career Research and Career Discussion</td><td>Research ideas, career guidance, and networking</td></tr>
     <tr class="session-b"><td>13:30–14:05</td><td><strong>Keynote 4</strong>: Sarah Bergbreiter</td><td><a href="/speakers#talk-sarah-bergbreiter">Event-based mechanosensing for insect-scale autonomy</a></td></tr>
     <tr class="session-b"><td>14:05–14:30</td><td><strong>Industry Talk 1</strong>: Geoffrey Barrows (Centeye)</td><td><a href="/speakers#talk-geoffrey-barrows">What can you do with a few thousand pixels?</a></td></tr>
-    <tr class="session-c"><td>14:30–15:05</td><td><strong>Keynote 5</strong>: Vijay Janapa Reddi</td><td>Title TBD</td></tr>
+    <tr class="session-c"><td>14:30–15:05</td><td><strong>Keynote 5</strong>: Sean Humbert</td><td><a href="/speakers#talk-sean-humbert">Sensing What Matters: Embodied Control for Agile Autonomous Systems</a></td></tr>
     <tr class="session-c" id="contributed-talks-2"><td>15:05–15:40</td><td>Contributed Talks — 2<br /><small>6 papers · 5 minutes each · Q&amp;A during poster session</small></td><td><ol class="paper-titles">
       <li><strong>#4:</strong> Let it Cook: Learning to Wait in Sequential Decision Making</li>
       <li><strong>#3:</strong> Design, Modeling and Control of Quad-thopter with Thrust Vectoring Mechanism for Omnidirectional Flapping Flight</li>
@@ -58,7 +57,7 @@ updated: "2026-09-27"
     <tr><td>15:40–16:20</td><td>Coffee Break + Poster Session</td><td>Accepted papers/posters outside the conference room</td></tr>
     <tr><td>16:20–16:30</td><td>Break</td><td></td></tr>
     <tr><td>16:30–17:15</td><td><strong>Panel Discussion</strong>: Enabling Autonomy at Insect Scale</td><td><strong>Panelists:</strong> Frances Chance, Yiannis Aloimonos, Geoffrey Barrows, and Sean Humbert.<br />Roadmap discussion and audience Q&amp;A.</td></tr>
-    <tr><td>17:15–17:25</td><td>Awards and Community Perspective Paper</td><td>Awards and post-workshop next steps</td></tr>
+    <tr><td>17:15–17:25</td><td>Awards and Community Perspective Paper</td><td>One Best Paper Award, one Best Poster Award, and post-workshop next steps</td></tr>
     <tr><td>17:25–17:35</td><td>Closing remarks</td><td>Summary and acknowledgments</td></tr>
   </tbody>
 </table>

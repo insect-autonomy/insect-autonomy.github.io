@@ -11,13 +11,26 @@ const talkId = (name) =>
     .replace(/(^-|-$)/g, "")}`;
 const roleClass = (status) =>
   status ? `role-${status.toLowerCase().replace(/\s+/g, "-")}` : "";
+
+const bioParts = (person) => {
+  let parts = [person.bio];
+  for (const link of person.bioLinks ?? []) {
+    parts = parts.flatMap((part) => {
+      if (typeof part !== "string") return [part];
+      return part.split(link.label).flatMap((text, index) =>
+        index === 0 ? [text] : [link, text],
+      );
+    });
+  }
+  return parts;
+};
 ---
 
 {talks.length > 0 && (
   <section class="talks" aria-labelledby="invited-talks-heading">
     <header class="talks-heading">
       <h2 id="invited-talks-heading">Invited Talks</h2>
-      <p>Talk abstracts and speaker biographies are added as they are confirmed.</p>
+      <p>Explore the talk abstracts and speaker biographies below.</p>
     </header>
 
     <div class="talk-list">
@@ -62,7 +75,9 @@ const roleClass = (status) =>
             {person.bio && (
               <section class="copy-block" aria-labelledby={`${talkId(person.name)}-bio`}>
                 <h4 id={`${talkId(person.name)}-bio`}>Speaker Bio</h4>
-                <p>{person.bio}</p>
+                <p>{bioParts(person).map((part) => typeof part === "string" ? part : (
+                  <a href={part.url} target="_blank" rel="noopener noreferrer"><strong>{part.label}</strong></a>
+                ))}</p>
               </section>
             )}
           </div>

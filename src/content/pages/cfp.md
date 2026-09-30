@@ -115,9 +115,9 @@ Submissions will be reviewed based on:
 Submissions will be reviewed non-anonymously by the workshop organizers and invited reviewers.
 
 # Awards
-Submitted papers and posters will be considered for workshop awards. Awards may include:
-- Best Paper Award
-- Best Poster Award
+Submitted papers and posters will be considered for two workshop awards:
+- One Best Paper Award
+- One Best Poster Award
 
 Award decisions will be based on technical merit, originality, relevance to the workshop theme, quality of presentation, and potential impact on the field.
 

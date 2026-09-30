@@ -13,6 +13,7 @@ const person = z.object({
   abstract: z.string().optional(),
   abstractCredit: z.string().optional(),
   bio: z.string().optional(),
+  bioLinks: z.array(z.object({ label: z.string(), url: z.string().url() })).optional(),
 });
 
 const organizer = z.object({
